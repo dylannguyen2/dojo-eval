@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "create-shape-with-text-v2",
+  "name": "Create Shape with Text",
+  "description": "Create a shape with text label in FigJam",
+  "tier": "beginner",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Open the FigJam file 'Brainstorming Session'. Create a diamond shape with the text 'Decision Point' inside it. The shape should represent a decision node in a flowchart.\", \"success_criteria\": \"A diamond shape exists with the text 'Decision Point'. The shape type must be 'diamond' and the text must be exactly as specified.\"}",
+  "reward_function": "_validate_figma_create_shape_with_text",
+  "valid_target_states": "",
+  "max_steps": 15,
+  "timeout_seconds": 120,
+  "metadata": "{\"category\": \"FigJam\", \"difficulty\": \"easy\", \"workflow\": \"figjam_creation\"}",
+  "environment_type": "mcp",
+  "trace_id": "create-shape-with-text-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":null,\"currentPageId\":null,\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-5\"}",
+  "image": "",
+  "env_version": "1.0"
+}
