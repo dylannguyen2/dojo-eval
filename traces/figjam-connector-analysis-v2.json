@@ -2,8 +2,8 @@
   "task_id": "figjam-connector-analysis-v2",
   "steps": [
     {
-      "action": "Get FigJam board data to analyze connectors and spatial layout",
-      "command": "mcp_official-figma-mcp_get_figjam(nodeId: \"page-4\", fileKey: \"file-3\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get FigJam board data including connectors, stickies, and sections",
+      "command": "mcp_figma-mcp_get_figjam(nodeId: \"page-4\", fileKey: \"file-3\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }
   ],

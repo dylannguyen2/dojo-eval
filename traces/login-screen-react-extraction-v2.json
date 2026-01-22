@@ -2,10 +2,15 @@
   "task_id": "login-screen-react-extraction-v2",
   "steps": [
     {
+      "action": "Get file metadata to understand Login Screen structure",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
+      "method": "mcp"
+    },
+    {
       "action": "Extract Login Screen frame as React code with embedded SVG",
       "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }
   ],
-  "final_answer": "{\"framework\": \"react\", \"component_name\": \"Component\", \"has_svg\": true, \"code_length\": 1059}"
+  "final_answer": "{\"framework\": \"react\", \"component_name\": \"Component\", \"has_svg\": true, \"code_length\": 956}"
 }

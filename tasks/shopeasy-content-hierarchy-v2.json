@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "shopeasy-content-hierarchy-v2",
+  "name": "ShopEasy Login Content Hierarchy Analysis",
+  "description": "Perform deep hierarchy analysis of the ShopEasy Login Content frame",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform deep hierarchy analysis of the ShopEasy Login Content frame (nodeId: node-shopeasy-login-content, fileKey: file-shopeasy). Navigate through all nested levels and count nodes by type at each depth. Identify all frame-type nodes within the Content hierarchy and map their parent-child relationships. Verify the exact position and dimensions of each frame child.\\n\\nProvide your final answer as JSON in this exact format:\\n{\\n  \\\"content_frame\\\": {\\\"name\\\": \\\"Content\\\", \\\"x\\\": 24, \\\"y\\\": 224, \\\"width\\\": 345, \\\"height\\\": 500},\\n  \\\"total_nested_nodes\\\": <number>,\\n  \\\"frame_hierarchy\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"type\\\": \\\"frame\\\", \\\"x\\\": <number>, \\\"y\\\": <number>, \\\"width\\\": <number>, \\\"height\\\": <number>, \\\"children_count\\\": <number>}],\\n  \\\"node_counts_by_type\\\": {\\\"frame\\\": <count>, \\\"text\\\": <count>},\\n  \\\"deepest_nesting_level\\\": <number>\\n}\", \"success_criteria\": \"Content frame position is x=24, y=224. Content frame dimensions are 345x500 pixels. Accurate count of all nested nodes within Content. Correct identification of all frame-type children. Proper parent-child relationship mapping. Accurate node type counting. Deepest nesting level is accurate integer. Each frame in hierarchy has valid x, y, width, height. children_count matches actual number of direct children. frame_hierarchy array sorted by hierarchy depth. node_counts_by_type includes all encountered types. Total nested nodes equals sum of all type counts. Parent-child relationships form valid tree structure. No circular references in hierarchy. All frame children positioned within parent bounds. Text node count accurately reflects text elements.\"}",
+  "reward_function": "_validate_shopeasy_content_hierarchy",
+  "valid_target_states": "",
+  "max_steps": 25,
+  "timeout_seconds": 240,
+  "metadata": "{\"category\": \"Hierarchy Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "shopeasy-content-hierarchy-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-shopeasy\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-shopeasy\"}",
+  "image": "",
+  "env_version": "1.0"
+}

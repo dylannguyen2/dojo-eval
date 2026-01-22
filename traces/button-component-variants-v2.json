@@ -2,18 +2,13 @@
   "task_id": "button-component-variants-v2",
   "steps": [
     {
-      "action": "Get metadata for Buttons page to identify component positions and dimensions",
-      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"page-3\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get Button/Primary component metadata",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-comp-button-primary\", fileKey: \"file-2\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     },
     {
-      "action": "Get design context for Button/Primary component",
-      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-comp-button-primary\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
-      "method": "mcp"
-    },
-    {
-      "action": "Get design context for Button/Secondary component",
-      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-comp-button-secondary\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get Button/Secondary component metadata",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-comp-button-secondary\", fileKey: \"file-2\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }
   ],

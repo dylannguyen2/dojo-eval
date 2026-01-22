@@ -2,12 +2,12 @@
   "task_id": "q1-goals-section-extraction-v2",
   "steps": [
     {
-      "action": "Get metadata for Q1 Goals section to verify position and dimensions",
-      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"node-section-q1\", fileKey: \"file-3\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get FigJam Q1 Goals section metadata and screenshot",
+      "command": "mcp_figma-mcp_get_figjam(nodeId: \"node-section-q1\", fileKey: \"file-3\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     },
     {
-      "action": "Extract Q1 Goals section as React component with embedded SVG",
+      "action": "Extract Q1 Goals section as React code with embedded SVG",
       "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-section-q1\", fileKey: \"file-3\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }

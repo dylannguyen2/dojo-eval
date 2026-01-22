@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "fittrack-charts-grid-analysis-v2",
+  "name": "FitTrack Analytics Charts Grid Analysis",
+  "description": "Perform deep hierarchy analysis on the FitTrack analytics charts grid",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform deep hierarchy analysis on the FitTrack analytics charts grid (nodeId: node-fittrack-analytics-charts, fileKey: file-fittrack). Navigate through all nested levels to count chart frames, their titles, values, and chart areas. Verify the grid contains exactly 3 chart frames positioned at specific x-coordinates (0, 386, 772). Each chart should have a title, value, and chart area as children.\\n\\nProvide your final answer as JSON in this exact format:\\n{\\n  \\\"grid_name\\\": \\\"Charts Grid\\\",\\n  \\\"total_chart_frames\\\": <number>,\\n  \\\"chart_positions\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"x\\\": <number>, \\\"y\\\": <number>}],\\n  \\\"total_text_elements\\\": <number>,\\n  \\\"total_rectangles\\\": <number>,\\n  \\\"hierarchy_depth\\\": <number>,\\n  \\\"all_nodes\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"type\\\": \\\"<string>\\\", \\\"parent\\\": \\\"<string>\\\"}]\\n}\", \"success_criteria\": \"Charts grid named 'Charts Grid' exists. Exactly 3 chart frames found. Chart frames at x-coordinates 0, 386, 772. Each chart has title, value, and area children. Total text elements count is accurate. All parent-child relationships verified. total_chart_frames equals 3. chart_positions array has 3 entries. First chart at x=0. Second chart at x=386. Third chart at x=772. Chart spacing is consistent (386 pixels). hierarchy_depth accurately reflects nesting levels. all_nodes array contains every node in hierarchy. Each node has valid name, type, and parent fields. Rectangle count matches chart area backgrounds. Text elements include both titles and values. Parent references form valid tree to Charts Grid root. No orphan nodes without parent reference. Y-coordinates consistent across chart frames.\"}",
+  "reward_function": "_validate_fittrack_charts_grid_analysis",
+  "valid_target_states": "",
+  "max_steps": 25,
+  "timeout_seconds": 240,
+  "metadata": "{\"category\": \"Hierarchy Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "fittrack-charts-grid-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-fittrack\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-fittrack\"}",
+  "image": "",
+  "env_version": "1.0"
+}

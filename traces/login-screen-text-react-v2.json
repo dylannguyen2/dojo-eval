@@ -2,12 +2,7 @@
   "task_id": "login-screen-text-react-v2",
   "steps": [
     {
-      "action": "Get metadata for Login Screen to identify text elements",
-      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
-      "method": "mcp"
-    },
-    {
-      "action": "Extract Login Screen as React component with embedded SVG",
+      "action": "Extract Login Screen frame as React code with text elements and embedded SVG",
       "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }

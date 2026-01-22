@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "journey-mapping-analysis-v2",
+  "name": "User Journey Mapping Board Analysis",
+  "description": "Analyze the complex multi-level hierarchy of the user journey mapping board",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Analyze the complex multi-level hierarchy of the user journey mapping board (nodeId: node-journey-text-title, fileKey: file-5). Navigate through all journey stages, count shape-with-text elements by type, verify connector relationships between stages, and identify pain points and opportunities marked with sticky notes.\\n\\nProvide your final answer as JSON in this exact format:\\n{\\n  \\\"journey_title\\\": \\\"<string>\\\",\\n  \\\"total_stages\\\": <number>,\\n  \\\"stage_shapes\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"shape_type\\\": \\\"<ellipse|rectangle|diamond>\\\", \\\"x\\\": <number>, \\\"y\\\": <number>}],\\n  \\\"connectors_between_stages\\\": <number>,\\n  \\\"sticky_notes\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"type\\\": \\\"<pain_point|opportunity>\\\", \\\"x\\\": <number>, \\\"y\\\": <number>}],\\n  \\\"total_shape_with_text_elements\\\": <number>\\n}\", \"success_criteria\": \"Journey title correctly identified. Exactly 4 journey stage shapes found. Shape types correctly identified (ellipse, rectangle, diamond). Exactly 3 connectors between stages verified. Sticky notes categorized by type. All positions are mathematically accurate. total_stages equals 4. stage_shapes array has 4 entries. Each stage shape has valid shape_type from allowed values. Connectors link consecutive stages in order. connectors_between_stages equals 3. Pain point sticky notes identified correctly. Opportunity sticky notes identified correctly. sticky_notes array separates pain_point and opportunity types. total_shape_with_text_elements matches stage count. Stage shapes sorted by x-coordinate for journey flow. Connector directions follow left-to-right journey flow. All sticky note positions relative to associated stages. Shape dimensions appropriate for stage representation. Journey flows from start ellipse through rectangles to end.\"}",
+  "reward_function": "_validate_journey_mapping_analysis",
+  "valid_target_states": "",
+  "max_steps": 25,
+  "timeout_seconds": 240,
+  "metadata": "{\"category\": \"FigJam Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"figjam_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "journey-mapping-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-5\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-5\"}",
+  "image": "",
+  "env_version": "1.0"
+}

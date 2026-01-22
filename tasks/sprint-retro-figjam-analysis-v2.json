@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "sprint-retro-figjam-analysis-v2",
+  "name": "Sprint Retro FigJam Board Analysis",
+  "description": "Analyze the Sprint Retro FigJam board structure with sticky notes and column spacings",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Analyze the Sprint Retro FigJam board structure (nodeId: page-7, fileKey: file-7). Count the total number of STICKY type nodes and CONNECTOR type nodes on this board. Verify specific sticky note positions: 'Good 1' at (120, 120), 'Improve 1' at (400, 120), 'Action 1' at (680, 120). Calculate the horizontal spacing between the three main columns (Good, Improve, Action).\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"board_name\\\": \\\"Retro Board\\\",\\n  \\\"sticky_count\\\": \\\"<total STICKY nodes>\\\",\\n  \\\"connector_count\\\": \\\"<total CONNECTOR nodes>\\\",\\n  \\\"key_stickies\\\": [\\n    {\\\"name\\\": \\\"Good 1\\\", \\\"x\\\": 120, \\\"y\\\": 120, \\\"width\\\": 120, \\\"height\\\": 120},\\n    {\\\"name\\\": \\\"Improve 1\\\", \\\"x\\\": 400, \\\"y\\\": 120, \\\"width\\\": 120, \\\"height\\\": 120},\\n    {\\\"name\\\": \\\"Action 1\\\", \\\"x\\\": 680, \\\"y\\\": 120, \\\"width\\\": 120, \\\"height\\\": 120}\\n  ],\\n  \\\"column_spacings\\\": [{\\\"between\\\": [\\\"Good\\\", \\\"Improve\\\"], \\\"pixels\\\": 160}, {\\\"between\\\": [\\\"Improve\\\", \\\"Action\\\"], \\\"pixels\\\": 160}]\\n}\", \"success_criteria\": \"Correct count of STICKY type nodes. Correct count of CONNECTOR type nodes. Good 1 at position (120, 120). Improve 1 at position (400, 120). Action 1 at position (680, 120). Horizontal spacing calculated between columns. Board name is Retro Board. All key stickies have width=120 and height=120. Good to Improve spacing is 160 pixels. Improve to Action spacing is 160 pixels. All three columns have consistent y-coordinate (120). sticky_count is numeric value not string. connector_count is numeric value not string. column_spacings array has exactly 2 entries. All sticky nodes within board bounds. Connectors link stickies across columns.\"}",
+  "reward_function": "_validate_sprint_retro_figjam_analysis",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"FigJam Analysis\", \"difficulty\": \"intermediate\", \"workflow\": \"figjam_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "sprint-retro-figjam-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-7\",\"currentPageId\":\"page-7\",\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-7/page-7\"}",
+  "image": "",
+  "env_version": "1.0"
+}

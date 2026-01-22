@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "q1-roadmap-figjam-analysis-v2",
+  "name": "Q1 Roadmap FigJam Board Analysis",
+  "description": "Analyze the Q1 Roadmap FigJam board structure including sticky notes, connectors, and sections",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Analyze the Q1 Roadmap FigJam board structure (nodeId: node-section-q1, fileKey: file-3) using get_figjam. Count all STICKY nodes, CONNECTOR nodes, SECTION nodes, and SHAPE-WITH-TEXT nodes within the board. Verify the Q1 Goals section dimensions and position, then analyze the spatial distribution of sticky notes and their relationships through connectors.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"q1_section\\\": {\\\"name\\\": \\\"Q1 Goals\\\", \\\"x\\\": 50, \\\"y\\\": 50, \\\"width\\\": 800, \\\"height\\\": 400},\\n  \\\"node_counts\\\": {\\n    \\\"sticky\\\": <number>,\\n    \\\"connector\\\": <number>,\\n    \\\"section\\\": <number>,\\n    \\\"shape-with-text\\\": <number>,\\n    \\\"stamp\\\": <number>\\n  },\\n  \\\"stickies\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"x\\\": <number>, \\\"y\\\": <number>, \\\"width\\\": <number>, \\\"height\\\": <number>}]\\n}\", \"success_criteria\": \"Q1 Goals section name is correct. Section position is x=50, y=50. Section dimensions are 800x400. Accurate count of STICKY nodes. Accurate count of CONNECTOR nodes. Accurate count of SECTION nodes. Accurate count of SHAPE-WITH-TEXT nodes. All sticky positions and dimensions are correct. Accurate count of STAMP nodes. Stickies array contains all sticky nodes. Each sticky has valid x, y, width, height properties. Connector endpoints reference valid node IDs. Section contains all child sticky nodes spatially. Total node count matches sum of individual type counts. No duplicate nodes in counts. Spatial distribution analysis includes relative positions.\"}",
+  "reward_function": "_validate_q1_roadmap_figjam_analysis",
+  "valid_target_states": "",
+  "max_steps": 25,
+  "timeout_seconds": 240,
+  "metadata": "{\"category\": \"FigJam Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"figjam_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "q1-roadmap-figjam-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-3\",\"currentPageId\":\"page-4\",\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-3/page-4\"}",
+  "image": "",
+  "env_version": "1.0"
+}

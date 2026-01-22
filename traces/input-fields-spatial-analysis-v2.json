@@ -2,8 +2,8 @@
   "task_id": "input-fields-spatial-analysis-v2",
   "steps": [
     {
-      "action": "Get metadata for Login Screen frame to find input fields",
-      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get Login Screen frame metadata to analyze input field positions",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }
   ],

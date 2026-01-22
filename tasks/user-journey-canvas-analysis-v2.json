@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "user-journey-canvas-analysis-v2",
+  "name": "User Journey Canvas Multi-Level Analysis",
+  "description": "Perform multi-level hierarchy analysis of the User Journey Canvas with flow distance calculation",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform multi-level hierarchy analysis of the User Journey Canvas (nodeId: node-journey-text-title, fileKey: file-5). Navigate through all nested elements, count nodes by type at each hierarchy level, identify all SHAPE-WITH-TEXT nodes and their spatial relationships. Calculate the horizontal flow distance from first stage to last stage.\\n\\nProvide your final answer as JSON in this exact format:\\n{\\n  \\\"total_nodes\\\": <number>,\\n  \\\"hierarchy_levels\\\": <number>,\\n  \\\"nodes_by_level\\\": [{\\\"level\\\": <number>, \\\"node_count\\\": <number>, \\\"types\\\": {\\\"<type>\\\": <count>}}],\\n  \\\"shape_with_text_nodes\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"x\\\": <number>, \\\"y\\\": <number>, \\\"stage_order\\\": <number>}],\\n  \\\"flow_distance\\\": {\\\"from\\\": \\\"<first_stage>\\\", \\\"to\\\": \\\"<last_stage>\\\", \\\"horizontal_pixels\\\": <number>},\\n  \\\"journey_stages_count\\\": <number>\\n}\", \"success_criteria\": \"Accurate total node count across all levels. Correct hierarchy depth identification. Proper node type counting at each level. Accurate identification of all SHAPE-WITH-TEXT nodes. Correct flow distance calculation between first and last stages. Accurate journey stage counting. nodes_by_level array has entry for each hierarchy level. stage_order values are sequential integers starting from 1. shape_with_text_nodes sorted by x-coordinate for flow order. flow_distance horizontal_pixels is positive number. from and to stage names match actual first and last stages. Each level node_count matches sum of types counts. hierarchy_levels equals length of nodes_by_level array. Spatial relationships show left-to-right flow progression. All SHAPE-WITH-TEXT nodes have valid x, y coordinates. Journey stages count matches shape_with_text_nodes length.\"}",
+  "reward_function": "_validate_user_journey_canvas_analysis",
+  "valid_target_states": "",
+  "max_steps": 25,
+  "timeout_seconds": 240,
+  "metadata": "{\"category\": \"FigJam Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"figjam_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "user-journey-canvas-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-5\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-5\"}",
+  "image": "",
+  "env_version": "1.0"
+}

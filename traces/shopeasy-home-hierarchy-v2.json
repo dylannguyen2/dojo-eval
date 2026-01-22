@@ -2,8 +2,8 @@
   "task_id": "shopeasy-home-hierarchy-v2",
   "steps": [
     {
-      "action": "Get metadata for ShopEasy Home Screen to analyze hierarchy structure",
-      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-shopeasy-home-frame\", fileKey: \"file-shopeasy\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get ShopEasy Home Screen frame metadata to analyze hierarchy",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-shopeasy-home-frame\", fileKey: \"file-shopeasy\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }
   ],

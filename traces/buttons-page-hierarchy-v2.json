@@ -2,8 +2,8 @@
   "task_id": "buttons-page-hierarchy-v2",
   "steps": [
     {
-      "action": "Get metadata for Buttons page to analyze component hierarchy",
-      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"page-3\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "action": "Get Buttons page metadata to analyze component hierarchy",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"page-3\", fileKey: \"file-2\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
       "method": "mcp"
     }
   ],

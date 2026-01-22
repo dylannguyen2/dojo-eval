@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "shopeasy-size-selection-analysis-v2",
+  "name": "ShopEasy Size Selection Structural Analysis",
+  "description": "Perform deep structural analysis of the ShopEasy product detail size selection area",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform deep structural analysis of the ShopEasy product detail size selection area (nodeId: node-shopeasy-detail-sizes-row, fileKey: file-shopeasy). This row contains 4 size option frames (S, M, L, XL) with different selection states. Verify the exact positioning pattern, identical frame dimensions, and calculate the precise horizontal spacing. Identify which size appears selected based on position data.\\n\\nProvide your final answer as JSON in this exact format:\\n{\\n  \\\"container\\\": {\\\"name\\\": \\\"Size Options\\\", \\\"width\\\": 345, \\\"height\\\": 40},\\n  \\\"size_options\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"x\\\": <number>, \\\"y\\\": 0, \\\"width\\\": 44, \\\"height\\\": 40}],\\n  \\\"spacing_pattern\\\": {\\\"gap_between_sizes\\\": <pixels>, \\\"consistent_spacing\\\": true},\\n  \\\"layout_verification\\\": {\\\"all_same_height\\\": true, \\\"all_same_width\\\": true, \\\"y_aligned\\\": true},\\n  \\\"total_size_options\\\": 4\\n}\", \"success_criteria\": \"4 size frames identified in size_options array. Each size frame has width=44 pixels. Each size frame has height=40 pixels. All size frames have y=0 alignment verified. Spacing between frames calculated in gap_between_sizes. Container width is 345 pixels. Container height is 40 pixels. Container name is Size Options. Size names include S, M, L, XL labels. consistent_spacing is true when gaps are equal. all_same_height is true for 40px heights. all_same_width is true for 44px widths. y_aligned is true when all y=0. total_size_options equals 4. Size frames sorted by x-coordinate left to right. Selected size identifiable by visual state difference. X-coordinates show increasing horizontal pattern.\"}",
+  "reward_function": "_validate_shopeasy_size_selection_analysis",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Layout Analysis\", \"difficulty\": \"intermediate\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "shopeasy-size-selection-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-shopeasy\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-shopeasy\"}",
+  "image": "",
+  "env_version": "1.0"
+}

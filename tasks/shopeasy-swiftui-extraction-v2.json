@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "shopeasy-swiftui-extraction-v2",
+  "name": "ShopEasy Add to Cart Button SwiftUI Extraction",
+  "description": "Generate SwiftUI code for the ShopEasy product detail add to cart button component",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Generate SwiftUI code for the ShopEasy product detail add to cart button component (nodeId: node-shopeasy-detail-add-cart, fileKey: file-shopeasy). Extract this frame as SwiftUI View code by specifying clientLanguages=['swift'] and clientFrameworks=['swiftui']. Verify the generated code follows proper SwiftUI syntax with View protocol, body property, and embedded SVG rendering. Analyze the SwiftUI-specific code structure including proper View composition.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"framework\\\": \\\"swiftui\\\",\\n  \\\"code\\\": \\\"<the generated SwiftUI View code>\\\",\\n  \\\"has_svg\\\": <boolean>,\\n  \\\"swiftui_features\\\": [\\\"<array of SwiftUI syntax elements found>\\\"]\\n}\", \"success_criteria\": \"Generated code is valid SwiftUI with View protocol. Code contains body property returning some View. Code includes embedded SVG content. SwiftUI syntax follows proper structure and composition patterns. Struct conforms to View protocol. body property uses @ViewBuilder or returns some View. SwiftUI import statement present. Component uses proper SwiftUI view modifiers. SVG rendered using appropriate SwiftUI method. swiftui_features array lists actual SwiftUI elements found. Code compiles without syntax errors. View hierarchy uses proper SwiftUI containers (ZStack, VStack, HStack). Button styling appropriate for add to cart action. Framework field correctly set to swiftui. has_svg boolean accurately reflects SVG presence. Color values use SwiftUI Color type. Font styling uses SwiftUI Font modifiers. Layout uses SwiftUI alignment and spacing.\"}",
+  "reward_function": "_validate_shopeasy_swiftui_extraction",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Code Extraction\", \"difficulty\": \"intermediate\", \"workflow\": \"design_to_code\"}",
+  "environment_type": "mcp",
+  "trace_id": "shopeasy-swiftui-extraction-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-shopeasy\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-shopeasy\"}",
+  "image": "",
+  "env_version": "1.0"
+}

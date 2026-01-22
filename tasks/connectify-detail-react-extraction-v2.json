@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "connectify-detail-react-extraction-v2",
+  "name": "Extract Connectify Detail Screen as React Code",
+  "description": "Extract the Connectify Detail Screen frame as React code with embedded SVG",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Extract the Connectify Detail Screen frame (nodeId: node-connectify-detail-frame, fileKey: file-connectify) as React code using get_design_context. The frame should be converted to a React component with embedded SVG that renders the visual design. Analyze the generated code structure to verify it follows proper React patterns with JSX syntax and includes the visual representation as an inline SVG.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"framework\\\": \\\"react\\\",\\n  \\\"component_name\\\": \\\"<string>\\\",\\n  \\\"code\\\": \\\"<the complete generated React component code>\\\",\\n  \\\"has_svg\\\": <boolean>,\\n  \\\"exports_default\\\": <boolean>\\n}\", \"success_criteria\": \"Generated code is a valid React component. Code exports a default function component. Component uses proper JSX syntax with dangerouslySetInnerHTML. Embedded SVG exists in the code. Code includes className prop handling. SVG contains valid viewBox attribute. Component function name matches PascalCase convention. Code contains proper React import statement. SVG width and height attributes are present. No syntax errors in JSX structure. Component returns single root element. dangerouslySetInnerHTML uses __html key correctly.\"}",
+  "reward_function": "_validate_connectify_detail_react_extraction",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Code Extraction\", \"difficulty\": \"intermediate\", \"workflow\": \"design_to_code\"}",
+  "environment_type": "mcp",
+  "trace_id": "connectify-detail-react-extraction-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-connectify\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-connectify\"}",
+  "image": "",
+  "env_version": "1.0"
+}

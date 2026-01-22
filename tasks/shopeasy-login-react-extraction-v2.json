@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "shopeasy-login-react-extraction-v2",
+  "name": "Extract ShopEasy Login Screen as React Code",
+  "description": "Extract the complete ShopEasy Login Screen frame as React code with complex hierarchy",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Extract the complete ShopEasy Login Screen frame (nodeId: node-shopeasy-login-frame, fileKey: file-shopeasy) as React code. Analyze the generated code structure to verify it contains a properly formatted React functional component with JSX syntax, embedded SVG rendering using dangerouslySetInnerHTML, and proper component export. The frame includes a complex hierarchy with header, content, form sections, and social buttons.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"framework\\\": \\\"react\\\",\\n  \\\"code\\\": \\\"<the complete generated React component code>\\\",\\n  \\\"has_svg\\\": true,\\n  \\\"component_name\\\": \\\"<extracted component name>\\\",\\n  \\\"jsx_structure_valid\\\": \\\"<boolean - whether JSX structure is properly formatted>\\\"\\n}\", \"success_criteria\": \"React component structure with proper export. JSX syntax with dangerouslySetInnerHTML for SVG. Embedded SVG exists in the code. Component name extracted correctly. Component name follows PascalCase naming convention. Export statement uses default export syntax. SVG includes proper xmlns attribute. Code handles complex nested hierarchy from frame. Header section elements preserved in SVG. Form section elements preserved in SVG. Social buttons section preserved in SVG. jsx_structure_valid field correctly evaluates JSX validity. No unclosed JSX tags in generated code. SVG preserves original frame dimensions.\"}",
+  "reward_function": "_validate_shopeasy_login_react_extraction",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Code Extraction\", \"difficulty\": \"intermediate\", \"workflow\": \"design_to_code\"}",
+  "environment_type": "mcp",
+  "trace_id": "shopeasy-login-react-extraction-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-shopeasy\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-shopeasy\"}",
+  "image": "",
+  "env_version": "1.0"
+}
