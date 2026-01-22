@@ -1,0 +1,11 @@
+{
+  "task_id": "journey-mapping-analysis-v2",
+  "steps": [
+    {
+      "action": "Get FigJam board data for user journey mapping analysis",
+      "command": "mcp_figma-mcp_get_figjam(nodeId: \"page-6\", fileKey: \"file-5\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"journey_title\": \"Journey Title\", \"total_stages\": 4, \"stage_shapes\": [{\"name\": \"Stage 1\", \"shape_type\": \"rectangle\", \"x\": 100, \"y\": 150}, {\"name\": \"Stage 2\", \"shape_type\": \"rectangle\", \"x\": 300, \"y\": 150}, {\"name\": \"Stage 3\", \"shape_type\": \"diamond\", \"x\": 500, \"y\": 150}, {\"name\": \"Stage 4\", \"shape_type\": \"rectangle\", \"x\": 700, \"y\": 150}], \"connectors_between_stages\": 3, \"sticky_notes\": [{\"name\": \"Pain Point\", \"type\": \"pain_point\", \"x\": 300, \"y\": 280}, {\"name\": \"Opportunity\", \"type\": \"opportunity\", \"x\": 500, \"y\": 280}], \"total_shape_with_text_elements\": 4}"
+}

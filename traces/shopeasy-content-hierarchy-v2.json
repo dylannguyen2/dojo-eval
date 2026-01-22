@@ -1,0 +1,11 @@
+{
+  "task_id": "shopeasy-content-hierarchy-v2",
+  "steps": [
+    {
+      "action": "Get detailed metadata for ShopEasy Login Content frame and its hierarchy",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-shopeasy-login-content\", fileKey: \"file-shopeasy\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"content_frame\": {\"name\": \"Content\", \"x\": 24, \"y\": 224, \"width\": 345, \"height\": 500}, \"total_nested_nodes\": 16, \"frame_hierarchy\": [{\"name\": \"Welcome Section\", \"type\": \"frame\", \"x\": 0, \"y\": 0, \"width\": 345, \"height\": 80, \"children_count\": 2}, {\"name\": \"Login Form\", \"type\": \"frame\", \"x\": 0, \"y\": 100, \"width\": 345, \"height\": 200, \"children_count\": 3}, {\"name\": \"Social Section\", \"type\": \"frame\", \"x\": 0, \"y\": 320, \"width\": 345, \"height\": 100, \"children_count\": 3}, {\"name\": \"Email Input Group\", \"type\": \"frame\", \"x\": 0, \"y\": 0, \"width\": 345, \"height\": 48, \"children_count\": 1}, {\"name\": \"Password Input Group\", \"type\": \"frame\", \"x\": 0, \"y\": 64, \"width\": 345, \"height\": 48, \"children_count\": 1}, {\"name\": \"Sign In Button\", \"type\": \"frame\", \"x\": 0, \"y\": 140, \"width\": 345, \"height\": 48, \"children_count\": 1}, {\"name\": \"Social Buttons\", \"type\": \"frame\", \"x\": 0, \"y\": 40, \"width\": 345, \"height\": 48, \"children_count\": 2}], \"node_counts_by_type\": {\"frame\": 7, \"text\": 6, \"line\": 1, \"rectangle\": 2}, \"deepest_nesting_level\": 3}"
+}

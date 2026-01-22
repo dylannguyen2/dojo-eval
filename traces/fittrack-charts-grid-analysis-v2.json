@@ -1,0 +1,11 @@
+{
+  "task_id": "fittrack-charts-grid-analysis-v2",
+  "steps": [
+    {
+      "action": "Get detailed metadata for FitTrack analytics charts grid and its hierarchy",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-fittrack-analytics-charts\", fileKey: \"file-fittrack\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"grid_name\": \"Charts Grid\", \"total_chart_frames\": 3, \"chart_positions\": [{\"name\": \"Chart 1\", \"x\": 0, \"y\": 364}, {\"name\": \"Chart 2\", \"x\": 386, \"y\": 364}, {\"name\": \"Chart 3\", \"x\": 772, \"y\": 364}], \"total_text_elements\": 7, \"total_rectangles\": 4, \"hierarchy_depth\": 2, \"all_nodes\": [{\"name\": \"Charts Grid\", \"type\": \"FRAME\", \"parent\": \"root\"}, {\"name\": \"Main Chart\", \"type\": \"FRAME\", \"parent\": \"Charts Grid\"}, {\"name\": \"Chart Title\", \"type\": \"TEXT\", \"parent\": \"Main Chart\"}, {\"name\": \"Chart Area\", \"type\": \"RECTANGLE\", \"parent\": \"Main Chart\"}, {\"name\": \"Chart 1\", \"type\": \"FRAME\", \"parent\": \"Charts Grid\"}, {\"name\": \"Chart Title\", \"type\": \"TEXT\", \"parent\": \"Chart 1\"}, {\"name\": \"Chart Value\", \"type\": \"TEXT\", \"parent\": \"Chart 1\"}, {\"name\": \"Chart Area\", \"type\": \"RECTANGLE\", \"parent\": \"Chart 1\"}, {\"name\": \"Chart 2\", \"type\": \"FRAME\", \"parent\": \"Charts Grid\"}, {\"name\": \"Chart Title\", \"type\": \"TEXT\", \"parent\": \"Chart 2\"}, {\"name\": \"Chart Value\", \"type\": \"TEXT\", \"parent\": \"Chart 2\"}, {\"name\": \"Chart Area\", \"type\": \"RECTANGLE\", \"parent\": \"Chart 2\"}, {\"name\": \"Chart 3\", \"type\": \"FRAME\", \"parent\": \"Charts Grid\"}, {\"name\": \"Chart Title\", \"type\": \"TEXT\", \"parent\": \"Chart 3\"}, {\"name\": \"Chart Value\", \"type\": \"TEXT\", \"parent\": \"Chart 3\"}, {\"name\": \"Chart Area\", \"type\": \"RECTANGLE\", \"parent\": \"Chart 3\"}]}"
+}

@@ -1,0 +1,11 @@
+{
+  "task_id": "shopeasy-swiftui-extraction-v2",
+  "steps": [
+    {
+      "action": "Extract SwiftUI code for add to cart button using get_design_context with SwiftUI framework",
+      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-shopeasy-detail-add-cart\", fileKey: \"file-shopeasy\", clientLanguages: \"swift\", clientFrameworks: \"swiftui\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"framework\": \"swiftui\", \"code\": \"import SwiftUI\\nimport SVGView\\n\\nstruct Component: View {\\n  var body: some View {\\n    SVGView(svg: \\\"\\\"\\\"\\n<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"345\\\" height=\\\"56\\\" viewBox=\\\"0 0 345 56\\\"><rect x=\\\"0\\\" y=\\\"0\\\" width=\\\"345\\\" height=\\\"56\\\" rx=\\\"12\\\" fill=\\\"rgba(59, 130, 246, 1)\\\"  opacity=\\\"1\\\" /><text x=\\\"96\\\" y=\\\"-744\\\" font-size=\\\"18\\\" font-family=\\\"Inter\\\" fill=\\\"rgba(255, 255, 255, 1)\\\" text-anchor=\\\"middle\\\" opacity=\\\"1\\\">Add to Cart</text></svg>\\n\\\"\\\"\\\")\\n  }\\n}\", \"has_svg\": true, \"swiftui_features\": [\"import SwiftUI\", \"struct View\", \"body property\", \"some View\", \"SVGView\"]}"
+}

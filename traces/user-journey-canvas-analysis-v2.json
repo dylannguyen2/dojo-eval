@@ -1,0 +1,16 @@
+{
+  "task_id": "user-journey-canvas-analysis-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Journey Title node",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-journey-text-title\", fileKey: \"file-5\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    },
+    {
+      "action": "Get full page metadata to enumerate all nodes",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"page-6\", fileKey: \"file-5\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"total_nodes\": 10, \"hierarchy_levels\": 1, \"nodes_by_level\": [{\"level\": 1, \"node_count\": 10, \"types\": {\"text\": 1, \"shape-with-text\": 4, \"connector\": 3, \"sticky\": 2}}], \"shape_with_text_nodes\": [{\"name\": \"Stage 1\", \"x\": 100, \"y\": 150, \"stage_order\": 1}, {\"name\": \"Stage 2\", \"x\": 300, \"y\": 150, \"stage_order\": 2}, {\"name\": \"Stage 3\", \"x\": 500, \"y\": 150, \"stage_order\": 3}, {\"name\": \"Stage 4\", \"x\": 700, \"y\": 150, \"stage_order\": 4}], \"flow_distance\": {\"from\": \"Stage 1\", \"to\": \"Stage 4\", \"horizontal_pixels\": 600}, \"journey_stages_count\": 4}"
+}
