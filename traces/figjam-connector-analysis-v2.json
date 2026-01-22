@@ -1,0 +1,11 @@
+{
+  "task_id": "figjam-connector-analysis-v2",
+  "steps": [
+    {
+      "action": "Get FigJam board data to analyze connectors and spatial layout",
+      "command": "mcp_official-figma-mcp_get_figjam(nodeId: \"page-4\", fileKey: \"file-3\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"connectors\": [{\"name\": \"Connection 1-2\", \"start_node\": \"Feature Idea\", \"end_node\": \"Priority\", \"start_magnet\": \"right\", \"end_magnet\": \"left\", \"calculated_span\": {\"from_x\": 300, \"to_x\": 350}}, {\"name\": \"Connection 2-3\", \"start_node\": \"Priority\", \"end_node\": \"Tech Debt\", \"start_magnet\": \"right\", \"end_magnet\": \"left\", \"calculated_span\": {\"from_x\": 550, \"to_x\": 600}}], \"section_coverage\": {\"section_bounds\": {\"x\": 50, \"y\": 50, \"width\": 800, \"height\": 400}, \"sticky_bounds\": {\"leftmost\": 100, \"rightmost\": 800, \"topmost\": 100, \"bottommost\": 300}, \"encompasses_all_stickies\": true}, \"stamp_analysis\": {\"stamp_x\": 250, \"stamp_y\": 280, \"relative_to_stickies\": \"between Feature Idea and Priority\"}}"
+}

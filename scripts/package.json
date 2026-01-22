@@ -1,0 +1,21 @@
+{
+  "name": "scripts",
+  "type": "module",
+  "scripts": {
+    "seed": "tsx seed.ts",
+    "seed_local": "tsx seed_local.ts",
+    "generate-ids": "tsx generate-collection-ids.ts",
+    "merge-data": "tsx merge-data.ts",
+    "generate-diff": "tsx generate-diff.ts",
+    "apply-diff": "tsx apply-diff.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "dotenv": "^17.2.3",
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  }
+}

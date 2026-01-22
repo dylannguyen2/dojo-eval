@@ -1,0 +1,11 @@
+{
+  "task_id": "login-form-spatial-analysis-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Login Screen to extract exact element positions",
+      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"welcome_text_position\": {\"x\": 24, \"y\": 280}, \"email_input_position\": {\"x\": 24, \"y\": 380}, \"password_input_position\": {\"x\": 24, \"y\": 444}, \"sign_in_button_position\": {\"x\": 24, \"y\": 520}, \"spacing_email_to_password\": 64, \"spacing_password_to_button\": 76}"
+}

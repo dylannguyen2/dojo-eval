@@ -1,0 +1,11 @@
+{
+  "task_id": "buttons-page-hierarchy-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Buttons page to analyze component hierarchy",
+      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"page-3\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"page_name\": \"Buttons\", \"total_components\": 2, \"components\": [{\"name\": \"Button/Primary\", \"x\": 100, \"y\": 100, \"width\": 120, \"height\": 40}, {\"name\": \"Button/Secondary\", \"x\": 100, \"y\": 160, \"width\": 120, \"height\": 40}], \"vertical_spacing\": \"20\"}"
+}

@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "q1-goals-section-extraction-v2",
+  "name": "Q1 Goals Section FigJam Extraction",
+  "description": "Extract the Q1 Goals section from FigJam as React code",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Extract the complex 'Q1 Goals' section (node-section-q1) from the FigJam board as React code. This section node is positioned at (50,50) with dimensions 800x400 pixels and has a fill color with 30% opacity. The section contains multiple sticky notes and connectors within its bounds. Use get_design_context to generate React component code with embedded SVG showing the section's visual appearance.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"framework\\\": \\\"react\\\",\\n  \\\"section_name\\\": \\\"Q1 Goals\\\",\\n  \\\"position\\\": {\\\"x\\\": 50, \\\"y\\\": 50},\\n  \\\"dimensions\\\": {\\\"width\\\": 800, \\\"height\\\": 400},\\n  \\\"code\\\": \\\"<the generated React code>\\\",\\n  \\\"has_svg\\\": true,\\n  \\\"opacity_level\\\": \\\"<opacity value if visible in SVG>\\\"\\n}\", \"success_criteria\": \"Generated code is valid React component. Code contains embedded SVG data. Section positioned at (50,50). Section dimensions are 800x400. SVG shows section's visual appearance with opacity.\"}",
+  "reward_function": "_validate_figma_q1_goals_section_extraction",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Code Extraction\", \"difficulty\": \"advanced\", \"workflow\": \"figjam_to_code\"}",
+  "environment_type": "mcp",
+  "trace_id": "q1-goals-section-extraction-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-3\",\"currentPageId\":\"page-4\",\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-3/page-4\"}",
+  "image": "",
+  "env_version": "1.0"
+}

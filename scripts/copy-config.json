@@ -1,0 +1,46 @@
+{
+  "source_repo": "dojo-spas-private",
+  "target_repo": "dojo-colossus",
+  "directories_to_copy": [
+    {
+      "name": "dojo-hooks",
+      "description": "Core hooks library"
+    },
+    {
+      "name": "hooks-example",
+      "description": "Example hooks implementation"
+    },
+    {
+      "name": "local-server",
+      "description": "Local server for testing"
+    },
+    {
+      "name": "dojo-bench-customer-colossus",
+      "description": "tasks & verification source code"
+    }
+  ],
+  "apps_to_copy": [
+    {
+      "name": "jd",
+      "description": "JD app"
+    },
+    {
+      "name": "weibo",
+      "description": "Weibo app"
+    },
+    {
+      "name": "xiaohongshu",
+      "description": "Xiaohongshu app"
+    },
+    {
+      "name": "notion",
+      "description": "Notion app"
+    }
+  ],
+  "scripts_to_copy": [
+    {
+      "name": "seed_local.ts",
+      "description": "Local database seeding script"
+    }
+  ]
+}

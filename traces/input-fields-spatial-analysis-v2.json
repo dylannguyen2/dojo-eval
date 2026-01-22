@@ -1,0 +1,11 @@
+{
+  "task_id": "input-fields-spatial-analysis-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Login Screen frame to find input fields",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"email_input\": {\"name\": \"Email Input\", \"x\": 24, \"y\": 380, \"width\": 327, \"height\": 48}, \"password_input\": {\"name\": \"Password Input\", \"x\": 24, \"y\": 444, \"width\": 327, \"height\": 48}, \"vertical_spacing\": 16, \"horizontally_aligned\": true, \"same_dimensions\": true}"
+}

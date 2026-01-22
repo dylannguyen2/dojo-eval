@@ -1,0 +1,312 @@
+{
+  "generatedAt": "2025-12-27T10:51:19.208Z",
+  "contextUsed": {
+    "categories": 34,
+    "brands": 91,
+    "stores": 56,
+    "productsWithVariants": 25
+  },
+  "taskCount": 50,
+  "tasks": [
+    {
+      "prompt": "My old phone charger finally broke and I need a replacement fast. Find me a USB-C cable that's durable and reasonably priced, then add it to my cart.",
+      "verification": "Cart contains ≥1 USB-C cable/charger; product price is reasonable (under ¥100)",
+      "category": "电脑数码",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Looking for a gift for my colleague who just moved into a new place. Browse the home goods section and add a nice coffee mug or tea set to my cart—something practical but thoughtful.",
+      "verification": "Cart contains ≥1 coffee mug OR tea set from home goods category",
+      "category": "家居",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "I'm trying to eat healthier and want to add some organic cooking oil to my regular order. Search for organic oils, compare a couple options, and add one to cart.",
+      "verification": "Cart contains ≥1 cooking oil product labeled as organic",
+      "category": "粮油调味",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My dog is getting low on food and I need to reorder his usual brand. Find dog food, make sure to get the large breed formula in the 10kg size, and add it to my cart.",
+      "verification": "Cart contains ≥1 dog food product; variant shows large breed and 10kg size selected",
+      "category": "萌宠护理",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Need to stock up on some basic office supplies before the semester starts. Browse the stationery section and add a few essentials like pens and notebooks to my cart.",
+      "verification": "Cart contains ≥2 office supply items including at least 1 pen/writing instrument and 1 notebook",
+      "category": "文具办公",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "My skin's been really dry lately and I think I need a better moisturizer. Search for face creams, look at the reviews, and add something hydrating to my cart.",
+      "verification": "Cart contains ≥1 face cream/moisturizer product",
+      "category": "个护美妆",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "Planning a small dinner party and need some quality soy sauce for cooking. Find a well-reviewed soy sauce brand and add the large bottle to my cart.",
+      "verification": "Cart contains ≥1 soy sauce product in large size/volume",
+      "category": "粮油调味",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My workout shoes are falling apart and I need new running shoes with good cushioning. Search for running shoes, filter by price under 500 yuan, and show me the results.",
+      "verification": "Current screen shows search results for running shoes with price filter ≤¥500 applied",
+      "category": "鞋靴",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Looking to surprise my girlfriend with some nice skincare products. Browse the beauty section and add a couple items from a good brand to my cart.",
+      "verification": "Cart contains ≥2 skincare/beauty products from established brands",
+      "category": "个护美妆",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "I need a new kitchen knife since mine is getting dull. Search for chef's knives, find one with good reviews under 200 yuan, and add it to cart.",
+      "verification": "Cart contains ≥1 kitchen knife priced ≤¥200 yuan",
+      "category": "日用品",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My cat keeps scratching the furniture and I heard cat scratching posts help. Find a scratching post that's not too expensive and add it to my cart.",
+      "verification": "Cart contains ≥1 cat scratching post",
+      "category": "萌宠护理",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Want to check what electronics deals JD has running right now. Find the promotions page and show me what's on sale in the computer or phone categories.",
+      "verification": "Current screen shows promotional deals filtered to electronics/computer/phone categories",
+      "category": "电脑数码",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "Need to replace my old shampoo with something better for colored hair. Search for color-safe shampoo, read some reviews, and add one to my cart.",
+      "verification": "Cart contains ≥1 shampoo product suitable for colored/treated hair",
+      "category": "个护美妆",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My grandmother needs a simple phone with large buttons and clear display. Find an elderly-friendly smartphone or basic phone and add it to cart.",
+      "verification": "Cart contains ≥1 phone suitable for elderly users (simple interface or large buttons)",
+      "category": "手机通讯",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Stocking up for winter and need some warm clothes. Browse the clothing section and add a sweater or jacket in medium size to my cart.",
+      "verification": "Cart contains ≥1 sweater OR jacket in medium size",
+      "category": "服装",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "My laptop bag is worn out and I need something professional for work meetings. Search for laptop bags, find one that looks business-appropriate, and add it to cart.",
+      "verification": "Cart contains ≥1 laptop bag/briefcase suitable for business use",
+      "category": "箱包",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Planning to make some homemade noodles and need good flour. Find bread flour or high-gluten flour, compare a few options, and add one to my cart.",
+      "verification": "Cart contains ≥1 bread flour or high-gluten flour product",
+      "category": "粮油调味",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My roommate's birthday is coming up and he loves snacks. Browse the food section and add some interesting chips or crackers to my cart for him.",
+      "verification": "Cart contains ≥1 snack food item (chips, crackers, or similar)",
+      "category": "食品饮料",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "Need a reliable power bank for traveling since my phone battery doesn't last long. Search for portable chargers, find one with good capacity, and add it to cart.",
+      "verification": "Cart contains ≥1 power bank/portable charger",
+      "category": "电脑数码",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My washing machine is making weird noises and I think I need a repair kit or replacement parts. Search for washing machine maintenance supplies and add something useful to cart.",
+      "verification": "Cart contains ≥1 washing machine repair/maintenance item",
+      "category": "家用电器",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Want to upgrade my home office setup with a better desk lamp. Search for LED desk lamps, make sure it has adjustable brightness, and add one to my cart.",
+      "verification": "Cart contains ≥1 LED desk lamp with adjustable brightness feature",
+      "category": "家居",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My old toolbox is falling apart and I need a new one for basic home repairs. Find a tool set or toolbox with essential tools and add it to cart.",
+      "verification": "Cart contains ≥1 toolbox or tool set suitable for home repairs",
+      "category": "五金机电",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Looking for a birthday present for my 8-year-old nephew who loves building things. Browse the toys section and add some construction or educational toys to my cart.",
+      "verification": "Cart contains ≥1 construction/building toy or educational toy",
+      "category": "教育文娱",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "I want to start working out at home and need some basic equipment. Search for dumbbells or resistance bands under 300 yuan and add them to my cart.",
+      "verification": "Cart contains ≥1 fitness equipment item (dumbbells or resistance bands) priced ≤¥300",
+      "category": "运动户外",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My kitchen sponges are gross and I need to replace them. Find a pack of good cleaning sponges or scrubbers and add them to my cart.",
+      "verification": "Cart contains ≥1 pack of cleaning sponges or scrubbers",
+      "category": "日用品",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Need some healthy snacks for the office since I keep eating junk food. Browse the food section and add some nuts or dried fruit to my cart.",
+      "verification": "Cart contains ≥1 healthy snack item (nuts, dried fruit, or similar)",
+      "category": "食品饮料",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "My car needs an oil change soon and I want to do it myself this time. Search for engine oil suitable for my car and add it to cart along with an oil filter.",
+      "verification": "Cart contains ≥1 engine oil AND ≥1 oil filter",
+      "category": "汽车服务",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "I'm redecorating my living room and need some new throw pillows. Search for decorative pillows, find ones that match a modern style, and add a couple to cart.",
+      "verification": "Cart contains ≥2 decorative/throw pillows with modern styling",
+      "category": "家居",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My phone screen cracked and I need a new screen protector. Find a tempered glass protector for smartphones and add it to my cart.",
+      "verification": "Cart contains ≥1 tempered glass screen protector",
+      "category": "电脑数码",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Want to try some new tea flavors since I'm getting bored with my usual green tea. Browse different tea varieties and add something interesting to my cart.",
+      "verification": "Cart contains ≥1 tea product (different variety from green tea)",
+      "category": "食品饮料",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "My daughter needs new school supplies for the semester. Search for student notebooks and pens, and add a basic study set to my cart.",
+      "verification": "Cart contains ≥1 student notebook AND ≥1 pen/writing instrument",
+      "category": "文具办公",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "I keep losing my keys and need something to help me find them. Look for a key finder or Bluetooth tracker and add one to my cart.",
+      "verification": "Cart contains ≥1 key finder or Bluetooth tracking device",
+      "category": "电脑数码",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My bathroom needs a new shower curtain since the old one is moldy. Find a waterproof shower curtain in a neutral color and add it to cart.",
+      "verification": "Cart contains ≥1 shower curtain in neutral color",
+      "category": "日用品",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Planning a weekend hiking trip and need some energy bars or trail snacks. Search for outdoor food/snacks and add some to my cart.",
+      "verification": "Cart contains ≥1 energy bar or trail snack suitable for hiking",
+      "category": "食品饮料",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My old headphones finally died and I need new ones for music. Search for over-ear headphones with good sound quality under 400 yuan and add them to cart.",
+      "verification": "Cart contains ≥1 over-ear headphones priced ≤¥400",
+      "category": "电脑数码",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "I want to learn guitar and need a beginner-friendly acoustic guitar. Find one that's good for beginners and not too expensive, then add it to my cart.",
+      "verification": "Cart contains ≥1 acoustic guitar suitable for beginners",
+      "category": "教育文娱",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My mom mentioned she needs a new rice cooker since hers is acting up. Find a reliable rice cooker for a family of 4 and add it to my cart.",
+      "verification": "Cart contains ≥1 rice cooker suitable for family size (4+ servings)",
+      "category": "小家电",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "I'm starting a small garden and need some basic gardening tools. Browse the garden supplies and add a few essential tools to my cart.",
+      "verification": "Cart contains ≥2 gardening tools or supplies",
+      "category": "农资园艺",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "Need some basic first aid supplies for our home emergency kit. Search for bandages and antiseptic, and add them to my cart.",
+      "verification": "Cart contains ≥1 bandage product AND ≥1 antiseptic/first aid item",
+      "category": "健康保养",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My winter jacket zipper broke and I need a replacement jacket. Find a warm jacket in XL size, check the reviews, and add one to cart.",
+      "verification": "Cart contains ≥1 winter jacket in XL size",
+      "category": "服装",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "I'm hosting a dinner party next week and need some nice dinnerware. Search for dinner plates or a dinnerware set and add it to my cart.",
+      "verification": "Cart contains ≥1 dinner plate set or dinnerware collection",
+      "category": "日用品",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My fish tank filter stopped working and I need a replacement. Find aquarium filters, compare a couple options, and add one suitable for a 20-gallon tank to cart.",
+      "verification": "Cart contains ≥1 aquarium filter suitable for medium-sized tanks",
+      "category": "萌宠护理",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "Looking for a good moisturizing lotion since the weather is getting dry. Search for body lotions, read some reviews, and add one with good hydration to my cart.",
+      "verification": "Cart contains ≥1 body lotion/moisturizer product",
+      "category": "个护美妆",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "Need to replace my old cooking oil with something healthier. Find olive oil or avocado oil, compare prices, and add a good one to my cart.",
+      "verification": "Cart contains ≥1 olive oil OR avocado oil product",
+      "category": "粮油调味",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "My desk chair is uncomfortable and I need better back support. Search for office chairs with lumbar support and add one to my cart.",
+      "verification": "Cart contains ≥1 office chair with lumbar/back support feature",
+      "category": "家居",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "I want to surprise my kids with some educational books for bedtime reading. Browse children's books and add a couple age-appropriate ones to my cart.",
+      "verification": "Cart contains ≥2 children's books",
+      "category": "教育文娱",
+      "workflow": "category_browsing"
+    },
+    {
+      "prompt": "My phone case is cracked and I need a new protective case. Search for phone cases, make sure to get one with good drop protection, and add it to cart.",
+      "verification": "Cart contains ≥1 phone case with drop protection features",
+      "category": "电脑数码",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "Planning to do some home painting this weekend and need supplies. Find interior paint brushes and rollers, then add them to my cart.",
+      "verification": "Cart contains ≥1 paint brush AND ≥1 paint roller",
+      "category": "家具建材",
+      "workflow": "search_discovery"
+    },
+    {
+      "prompt": "My workout clothes are getting old and I need some new athletic wear. Search for workout shirts, find ones with moisture-wicking fabric, and add them to cart.",
+      "verification": "Cart contains ≥1 athletic/workout shirt with moisture-wicking feature",
+      "category": "运动户外",
+      "workflow": "product_evaluation"
+    },
+    {
+      "prompt": "I'm trying to reduce plastic waste and want reusable containers for food storage. Find glass or stainless steel food containers and add some to my cart.",
+      "verification": "Cart contains ≥1 glass OR stainless steel food storage container",
+      "category": "日用品",
+      "workflow": "search_discovery"
+    }
+  ]
+}

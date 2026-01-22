@@ -1,0 +1,21 @@
+{
+  "task_id": "button-component-variants-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Buttons page to identify component positions and dimensions",
+      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"page-3\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    },
+    {
+      "action": "Get design context for Button/Primary component",
+      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-comp-button-primary\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    },
+    {
+      "action": "Get design context for Button/Secondary component",
+      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-comp-button-secondary\", fileKey: \"file-2\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"page_name\": \"Buttons\", \"components\": [{\"name\": \"Button/Primary\", \"type\": \"component\", \"x\": 100, \"y\": 100, \"width\": 120, \"height\": 40, \"componentSetId\": \"compset-button\", \"variantProperties\": {\"State\": \"Default\", \"Variant\": \"Primary\"}}, {\"name\": \"Button/Secondary\", \"type\": \"component\", \"x\": 100, \"y\": 160, \"width\": 120, \"height\": 40, \"componentSetId\": \"compset-button\", \"variantProperties\": {\"State\": \"Default\", \"Variant\": \"Secondary\"}}], \"vertical_spacing\": 20}"
+}

@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "_id": "user_1", "name": "Alex", "status": "active" },
+    { "_id": "user_2", "name": "Blake", "status": "active" },
+    { "_id": "user_3", "name": "Casey", "status": "inactive" },
+    { "_id": "user_4", "name": "Dana", "status": "active" },
+    { "_id": "user_5", "name": "Ellis", "status": "inactive" }
+  ]
+}

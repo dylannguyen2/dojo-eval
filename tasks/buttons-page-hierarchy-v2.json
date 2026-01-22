@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "buttons-page-hierarchy-v2",
+  "name": "Buttons Page Component Hierarchy",
+  "description": "Analyze the complete component hierarchy on the Buttons page",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Analyze the complete component hierarchy on the 'Buttons' page (page-3) in the 'Component Library' file (file-2). Using get_metadata, verify there are exactly 2 component-type nodes: 'Button/Primary' and 'Button/Secondary'. The Primary button should be at (100,100) and Secondary at (100,160). Both should have the same width of 120px but height of 40px.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"page_name\\\": \\\"Buttons\\\",\\n  \\\"total_components\\\": 2,\\n  \\\"components\\\": [\\n    {\\\"name\\\": \\\"Button/Primary\\\", \\\"x\\\": 100, \\\"y\\\": 100, \\\"width\\\": 120, \\\"height\\\": 40},\\n    {\\\"name\\\": \\\"Button/Secondary\\\", \\\"x\\\": 100, \\\"y\\\": 160, \\\"width\\\": 120, \\\"height\\\": 40}\\n  ],\\n  \\\"vertical_spacing\\\": \\\"<pixels between the two buttons>\\\"\\n}\", \"success_criteria\": \"Page contains exactly 2 component nodes. Button/Primary located at (100,100) with dimensions 120x40. Button/Secondary located at (100,160) with dimensions 120x40. Vertical spacing between buttons is 20 pixels. Both components have identical widths of 120px.\"}",
+  "reward_function": "_validate_figma_buttons_page_hierarchy",
+  "valid_target_states": "",
+  "max_steps": 15,
+  "timeout_seconds": 120,
+  "metadata": "{\"category\": \"Component Analysis\", \"difficulty\": \"intermediate\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "buttons-page-hierarchy-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-2\",\"currentPageId\":\"page-3\",\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-2/page-3\"}",
+  "image": "",
+  "env_version": "1.0"
+}

@@ -1,0 +1,313 @@
+{
+    "generatedAt": "2025-12-23T04:25:27.272Z",
+    "contextUsed": {
+      "users": 2782,
+      "totalPosts": 580,
+      "uniqueTags": 100,
+      "userCategories": 89,
+      "albumPatterns": 0
+    },
+    "taskCount": 50,
+    "tasks": [
+      {
+        "prompt": "I'm trying to get back into a fitness routine after being lazy all winter. Find some workout content that doesn't look too intimidating—maybe bodyweight exercises or beginner-friendly stuff. Save the good ones and follow creators who seem encouraging rather than overly intense.",
+        "verification": "Collection with fitness/workout-related name containing ≥3 posts; user following ≥2 fitness-related accounts",
+        "workflow": "content_discovery",
+        "topic_area": "fitness"
+      },
+      {
+        "prompt": "Been seeing amazing makeup looks on my feed lately and want to try something new for date night this weekend. Collect some eye makeup tutorials that aren't too dramatic and follow a couple beauty creators whose style I like.",
+        "verification": "Collection with makeup/beauty-related name containing ≥3 posts; user following ≥2 beauty-related accounts",
+        "workflow": "content_discovery",
+        "topic_area": "beauty"
+      },
+      {
+        "prompt": "My friend just got a puppy and I want to send her some helpful content. Look for posts about puppy training or care tips, bookmark the useful ones, and maybe follow some pet accounts that share practical advice.",
+        "verification": "Collection with pet/puppy-related name containing ≥3 posts; user following ≥2 pet-related accounts",
+        "workflow": "content_discovery",
+        "topic_area": "pets"
+      },
+      {
+        "prompt": "Planning to redecorate my small bedroom and need ideas that actually work in tiny spaces. Save some realistic room inspiration posts and follow creators who focus on small-space living rather than those giant luxury homes.",
+        "verification": "Collection with bedroom/decor-related name containing ≥3 posts; user following ≥2 home decor accounts",
+        "workflow": "content_discovery",
+        "topic_area": "home"
+      },
+      {
+        "prompt": "I keep seeing this one creator posting amazing travel vlogs and want to check out their content properly. Go to their profile and follow them, then look through their recent posts and like a few that catch my eye.",
+        "verification": "User following ≥1 travel-related account; ≥2 posts liked on that account's profile",
+        "workflow": "social_profiles",
+        "topic_area": "travel"
+      },
+      {
+        "prompt": "Trying to eat healthier but all the diet content online is so extreme. Find some realistic meal prep or healthy eating posts that look doable for a busy person, save them for later reference.",
+        "verification": "Collection with healthy eating/meal prep-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "Saw someone post a gorgeous outfit earlier today and want to leave a compliment. Find a recent fashion post and comment something nice about their style.",
+        "verification": "Comment exists on a fashion-related post containing positive/complimentary sentiment",
+        "workflow": "content_engagement",
+        "topic_area": "fashion"
+      },
+      {
+        "prompt": "My eyes are getting tired from this bright screen—switch to dark mode and then browse my notifications to see what I've missed recently.",
+        "verification": "Theme = Dark; user is on notifications page or notifications have been viewed",
+        "workflow": "settings_personalization",
+        "topic_area": "general"
+      },
+      {
+        "prompt": "Getting into skincare lately and want to learn proper routines. Search for posts about basic skincare steps, save the helpful guides, and follow some creators who explain things clearly without being too scientific.",
+        "verification": "Search performed for skincare-related terms; collection with skincare-related name containing ≥3 posts; user following ≥2 beauty/skincare accounts",
+        "workflow": "content_discovery",
+        "topic_area": "beauty"
+      },
+      {
+        "prompt": "Need some motivation for my weight loss journey—looking for realistic transformation stories or tips that don't involve extreme measures. Bookmark the inspiring ones and connect with creators who share similar goals.",
+        "verification": "Collection with weight loss/fitness-related name containing ≥3 posts; user following ≥2 fitness/health accounts",
+        "workflow": "content_discovery",
+        "topic_area": "fitness"
+      },
+      {
+        "prompt": "Want to surprise my partner with a homemade dinner this weekend. Look for easy but impressive recipe ideas, save the ones that don't require too many fancy ingredients.",
+        "verification": "Collection with cooking/recipe-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "Thinking about getting bangs but nervous about the commitment. Find some hair transformation posts or styling tips for different face shapes, save them for reference when I talk to my hairstylist.",
+        "verification": "Collection with hair/hairstyle-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "beauty"
+      },
+      {
+        "prompt": "Just saw an amazing nail art design and want to show appreciation. Find that post or a similar nail art one and leave an encouraging comment for the creator.",
+        "verification": "Comment exists on a nail art/beauty-related post containing positive/encouraging sentiment",
+        "workflow": "content_engagement",
+        "topic_area": "beauty"
+      },
+      {
+        "prompt": "My apartment plants keep dying and I need help. Search for plant care tips for beginners, bookmark the practical advice, and follow some plant lovers who share realistic tips for apartment living.",
+        "verification": "Search performed for plant-related terms; collection with plant care-related name containing ≥3 posts; user following ≥2 plant/home accounts",
+        "workflow": "content_discovery",
+        "topic_area": "home"
+      },
+      {
+        "prompt": "Been feeling stressed lately and want to explore meditation or mindfulness content. Find some beginner-friendly posts about relaxation techniques and save them for when I need to unwind.",
+        "verification": "Collection with meditation/wellness-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "wellness"
+      },
+      {
+        "prompt": "There's this photographer whose work always amazes me—want to go check out their profile and engage with their recent posts. Like a few of their photos and maybe follow them if their style is consistently good.",
+        "verification": "User following ≥1 photography/art-related account; ≥2 posts liked on that account's profile",
+        "workflow": "social_profiles",
+        "topic_area": "art"
+      },
+      {
+        "prompt": "Planning a girls' trip to Shanghai next month and need insider recommendations. Look for posts about hidden gems or local favorites in Shanghai, save the good spots for our itinerary.",
+        "verification": "Collection with Shanghai/travel-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "travel"
+      },
+      {
+        "prompt": "Want to learn some basic photography skills for my vacation photos. Search for photography tips for beginners, bookmark tutorials that explain things simply without too much technical jargon.",
+        "verification": "Search performed for photography-related terms; collection with photography-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "art"
+      },
+      {
+        "prompt": "Saw someone post about their cat doing something hilarious earlier and want to leave a laughing comment. Find a cute pet post and react with something fun.",
+        "verification": "Comment exists on a pet-related post containing humor/positive reaction",
+        "workflow": "content_engagement",
+        "topic_area": "pets"
+      },
+      {
+        "prompt": "Getting ready for job interviews and need professional outfit ideas that work for a tech company—smart but not stuffy. Collect some inspiration and follow creators who understand business casual for younger professionals.",
+        "verification": "Collection with professional/outfit-related name containing ≥3 posts; user following ≥2 fashion accounts",
+        "workflow": "content_discovery",
+        "topic_area": "fashion"
+      },
+      {
+        "prompt": "My friend mentioned this amazing food blogger who posts about authentic Chinese recipes. Try to find them and check out their content—follow them if their recipes look legit and bookmark a couple dishes I want to try.",
+        "verification": "User following ≥1 food-related account; collection with Chinese food/recipe-related name containing ≥2 posts",
+        "workflow": "social_profiles",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "Been working from home too much and need some energy. Look for posts about desk exercises or stretches for office workers, save the ones that look doable during work breaks.",
+        "verification": "Collection with office fitness/stretching-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "fitness"
+      },
+      {
+        "prompt": "Want to try some new coffee brewing methods at home. Search for coffee-related content, save brewing tutorials or equipment reviews that seem helpful for a beginner.",
+        "verification": "Search performed for coffee-related terms; collection with coffee-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "This screen is way too bright for evening browsing—switch me to dark mode and then check what's new in my feed while you're at it.",
+        "verification": "Theme = Dark; user viewing homepage or recent posts",
+        "workflow": "settings_personalization",
+        "topic_area": "general"
+      },
+      {
+        "prompt": "Looking for budget-friendly date ideas since we're trying to save money. Find posts about cheap or free activities for couples, bookmark the creative suggestions.",
+        "verification": "Collection with date ideas/budget-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "Someone posted a really thoughtful caption about self-care and it resonated with me. Find a wellness or self-care post and leave a supportive comment sharing how it helped.",
+        "verification": "Comment exists on a wellness/self-care post containing supportive/personal sentiment",
+        "workflow": "content_engagement",
+        "topic_area": "wellness"
+      },
+      {
+        "prompt": "Need to organize my closet but don't know where to start. Look for wardrobe organization tips or capsule wardrobe guides, save the practical advice that doesn't require buying lots of new stuff.",
+        "verification": "Collection with closet organization/wardrobe-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "fashion"
+      },
+      {
+        "prompt": "Want to check if there are any new updates in my notifications and then browse some lifestyle content for weekend inspiration.",
+        "verification": "User viewed notifications page; browsed lifestyle/general content",
+        "workflow": "content_engagement",
+        "topic_area": "general"
+      },
+      {
+        "prompt": "Getting into baking during weekends and need some foolproof recipes. Search for beginner baking content, bookmark recipes that look achievable and don't require professional equipment.",
+        "verification": "Search performed for baking-related terms; collection with baking-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "There's this lifestyle creator whose aesthetic I really admire—their posts always look so put-together. Go to their profile, follow them, and like a few posts that inspire me.",
+        "verification": "User following ≥1 lifestyle-related account; ≥2 posts liked on that account's profile",
+        "workflow": "social_profiles",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "My skin has been acting up lately and I need gentle skincare advice. Find posts about sensitive skin routines or natural remedies, save the ones that don't involve harsh chemicals.",
+        "verification": "Collection with sensitive skin/skincare-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "beauty"
+      },
+      {
+        "prompt": "Saw someone share their study abroad experience and it looked amazing. Leave an encouraging comment asking about their favorite part of the experience.",
+        "verification": "Comment exists on a travel/study abroad post containing encouraging/question sentiment",
+        "workflow": "content_engagement",
+        "topic_area": "travel"
+      },
+      {
+        "prompt": "Want to start doing more outdoor activities but don't know what's accessible for beginners. Look for hiking tips or outdoor adventure posts for newbies, save the approachable suggestions.",
+        "verification": "Collection with outdoor/hiking-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "travel"
+      },
+      {
+        "prompt": "My room needs better lighting and ambiance. Search for room decor ideas focusing on lighting solutions, bookmark posts about creating cozy spaces on a budget.",
+        "verification": "Search performed for room decor/lighting terms; collection with lighting/decor-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "home"
+      },
+      {
+        "prompt": "Trying to reduce plastic waste and live more sustainably. Find posts about eco-friendly swaps or zero-waste tips that seem realistic for apartment living.",
+        "verification": "Collection with eco-friendly/sustainability-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "Someone posted a beautiful watercolor painting and I want to encourage them to keep creating. Find an art post and leave a thoughtful compliment about their technique or style.",
+        "verification": "Comment exists on an art-related post containing complimentary/encouraging sentiment about artistic skill",
+        "workflow": "content_engagement",
+        "topic_area": "art"
+      },
+      {
+        "prompt": "Need to meal prep for the busy week ahead. Look for easy meal prep ideas that don't require hours of cooking, save recipes that can be made in batches.",
+        "verification": "Collection with meal prep-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "This artist I follow just posted new work and it's incredible—want to go show some love. Check out an art creator's profile and engage with their recent posts by liking and maybe leaving appreciation comments.",
+        "verification": "User viewing art creator's profile; ≥2 posts liked; ≥1 comment on art post",
+        "workflow": "social_profiles",
+        "topic_area": "art"
+      },
+      {
+        "prompt": "Want to learn basic investing but all the financial content seems too complex. Search for beginner-friendly finance tips, save posts that explain things in simple terms.",
+        "verification": "Search performed for finance/investing terms; collection with finance-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "finance"
+      },
+      {
+        "prompt": "Getting tired of wearing the same outfits to work. Find some office-appropriate styling tips that work with pieces I probably already own, bookmark the versatile ideas.",
+        "verification": "Collection with office fashion/styling-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "fashion"
+      },
+      {
+        "prompt": "My sleep schedule is a mess and I need help winding down at night. Look for posts about bedtime routines or sleep hygiene tips, save the practical suggestions.",
+        "verification": "Collection with sleep/bedtime-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "wellness"
+      },
+      {
+        "prompt": "Want to surprise my mom with a thoughtful gift for her birthday. Search for DIY gift ideas or thoughtful present suggestions, bookmark the heartfelt ones that don't cost a fortune.",
+        "verification": "Search performed for gift/DIY terms; collection with gift ideas-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "Someone shared their morning routine and it looks so peaceful and organized. Leave a comment asking for tips on how they stay so consistent with their habits.",
+        "verification": "Comment exists on a morning routine/lifestyle post containing question about habits/consistency",
+        "workflow": "content_engagement",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "Trying to be more active but gym memberships are expensive. Find posts about home workouts or free fitness resources, save the ones that don't require much equipment.",
+        "verification": "Collection with home fitness/budget workout-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "fitness"
+      },
+      {
+        "prompt": "Want to learn some new hairstyles I can do myself for special occasions. Search for hair tutorial content, bookmark styles that look elegant but achievable for someone with basic skills.",
+        "verification": "Search performed for hairstyle/hair tutorial terms; collection with hairstyle-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "beauty"
+      },
+      {
+        "prompt": "There's this food creator who makes the most aesthetic breakfast posts—want to follow them and get some inspiration for making my mornings prettier. Check out their content and save a few breakfast ideas.",
+        "verification": "User following ≥1 food-related account; collection with breakfast-related name containing ≥2 posts",
+        "workflow": "social_profiles",
+        "topic_area": "food"
+      },
+      {
+        "prompt": "My productivity has been terrible lately and I need better habits. Look for posts about time management or productivity tips for students, save the realistic strategies that don't sound overwhelming.",
+        "verification": "Collection with productivity/study-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "Someone posted about their book recommendations and I want to add to the conversation. Find a book-related post and comment with a suggestion or ask what they're reading next.",
+        "verification": "Comment exists on a book/reading post containing book recommendation or reading question",
+        "workflow": "content_engagement",
+        "topic_area": "lifestyle"
+      },
+      {
+        "prompt": "Need to declutter my digital life and this bright app theme isn't helping my screen time goals. Switch to dark mode and then check my notifications to see what's actually important.",
+        "verification": "Theme = Dark; user viewed notifications page",
+        "workflow": "settings_personalization",
+        "topic_area": "general"
+      },
+      {
+        "prompt": "Want to start a small herb garden on my balcony but have zero gardening experience. Search for beginner gardening tips for small spaces, save guides that explain everything from scratch.",
+        "verification": "Search performed for gardening/herb garden terms; collection with gardening-related name containing ≥3 posts",
+        "workflow": "content_discovery",
+        "topic_area": "home"
+      }
+    ]
+  }

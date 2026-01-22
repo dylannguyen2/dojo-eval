@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "shopeasy-home-hierarchy-v2",
+  "name": "ShopEasy Home Screen Hierarchy Navigation",
+  "description": "Navigate and analyze the complex hierarchy of ShopEasy Home Screen",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Navigate the complex hierarchy of the ShopEasy Home Screen (node-shopeasy-home-frame) in file-shopeasy. The frame should be positioned at (0,0) with dimensions 393x852. Analyze its nested structure including Header frame with Header Actions frame containing 2 ellipse icons, Categories Section with Categories Row containing Category frames. Count total child nodes at each level and verify the Header Actions frame contains exactly 2 ellipse children: 'Search Icon' and 'Cart Icon'.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"root_frame\\\": {\\\"name\\\": \\\"ShopEasy Home Screen\\\", \\\"x\\\": 0, \\\"y\\\": 0, \\\"width\\\": 393, \\\"height\\\": 852},\\n  \\\"header_actions\\\": {\\\"name\\\": \\\"Header Actions\\\", \\\"child_count\\\": 2, \\\"children\\\": [{\\\"name\\\": \\\"<string>\\\", \\\"type\\\": \\\"ellipse\\\"}]},\\n  \\\"total_nodes_analyzed\\\": <number>\\n}\", \"success_criteria\": \"Root frame 'ShopEasy Home Screen' at position (0,0) with dimensions 393x852. Header Actions frame contains exactly 2 ellipse children. Search Icon is type ellipse. Cart Icon is type ellipse. Proper parent-child hierarchy verified.\"}",
+  "reward_function": "_validate_figma_shopeasy_home_hierarchy",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Hierarchy Analysis\", \"difficulty\": \"intermediate\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "shopeasy-home-hierarchy-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-shopeasy\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-shopeasy\"}",
+  "image": "",
+  "env_version": "1.0"
+}

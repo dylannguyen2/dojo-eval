@@ -1,0 +1,319 @@
+{
+  "generatedAt": "2025-12-21T20:58:43.946Z",
+  "contextUsed": {
+    "users": 226645,
+    "verifiedUsers": 33362,
+    "trendingTopics": 13,
+    "hashtagTopics": 7620,
+    "customGroups": 3
+  },
+  "taskCount": 51,
+  "tasks": [
+    {
+      "prompt": "I want to stay updated on entertainment news but my feed is too random. Find some verified entertainment bloggers or celebrity accounts and add them to Special Attention so their posts show up first.",
+      "verification": "≥2 verified entertainment-related accounts are in Special Attention category",
+      "workflow": "social_graph",
+      "content_theme": "entertainment"
+    },
+    {
+      "prompt": "Curious about what's happening with the recent political news. Check the trending topics for something about government or policy, then browse a few posts and leave a supportive comment on one that seems reasonable.",
+      "verification": "Current screen shows political/government trending topic; comment exists on a post within that topic",
+      "workflow": "content_engagement",
+      "content_theme": "politics"
+    },
+    {
+      "prompt": "Want to share my thoughts on the latest movie releases. Create a post reviewing a film I watched recently, include some movie hashtags, and keep it under 200 characters.",
+      "verification": "New post exists containing movie review content and ≥1 movie-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "entertainment"
+    },
+    {
+      "prompt": "My cooking game has been improving lately. Browse through some food posts in my feed and like the ones with actual recipes or cooking tips, not just pretty food photos.",
+      "verification": "≥3 food/recipe posts show as liked by user",
+      "workflow": "content_engagement",
+      "content_theme": "food"
+    },
+    {
+      "prompt": "Need to organize my professional contacts better. Create a group called '工作' for work-related accounts, then find and add some business or career-focused users I'm already following.",
+      "verification": "Custom group named '工作' exists; ≥2 business/career accounts assigned to group",
+      "workflow": "social_graph",
+      "content_theme": "business"
+    },
+    {
+      "prompt": "There's probably buzz about the new smartphone releases. Find the trending tech topic and engage with a couple posts by liking and commenting my opinion.",
+      "verification": "≥2 tech posts within trending topic show as liked and commented by user",
+      "workflow": "content_engagement",
+      "content_theme": "tech"
+    },
+    {
+      "prompt": "Want to post about my weekend workout routine. Write something motivational about fitness with relevant hashtags and maybe an emoji or two.",
+      "verification": "New post exists containing fitness/workout content, ≥1 fitness hashtag, and ≥1 emoji",
+      "workflow": "content_creation",
+      "content_theme": "fitness"
+    },
+    {
+      "prompt": "My travel feed is getting mixed with everything else. Set up a custom group for travel content and add some travel bloggers I follow so I can browse trip inspiration separately.",
+      "verification": "Custom group with travel-related name exists; ≥2 travel accounts assigned to group",
+      "workflow": "social_graph",
+      "content_theme": "travel"
+    },
+    {
+      "prompt": "Noticed some interesting discussions in my Latest Weibo section. Browse through it and find a post with good engagement, then join the conversation with a thoughtful comment.",
+      "verification": "Currently viewing Latest Weibo feed; comment exists on a post with ≥3 existing comments",
+      "workflow": "content_engagement",
+      "content_theme": "general"
+    },
+    {
+      "prompt": "Been reading some great books lately and want to connect with other readers. Search for book-related accounts and follow a couple that actually post book reviews regularly, not just book photos.",
+      "verification": "≥2 book/reading accounts followed from search results",
+      "workflow": "social_graph",
+      "content_theme": "books"
+    },
+    {
+      "prompt": "Want to share my opinion on current events. Check what's trending in news and create a post with my take on one of the topics, including the relevant hashtag.",
+      "verification": "New post exists referencing trending news topic with appropriate hashtag",
+      "workflow": "content_creation",
+      "content_theme": "news"
+    },
+    {
+      "prompt": "My music taste has been expanding lately. Find some music-related posts in the feed and like the ones about artists or songs I actually know, then follow one user who posts good music content.",
+      "verification": "≥2 music posts liked; ≥1 music-related account followed",
+      "workflow": "content_engagement",
+      "content_theme": "music"
+    },
+    {
+      "prompt": "Getting too many random notifications. Check who's in my Special Attention and remove anyone who posts too frequently or shares mostly reposts instead of original content.",
+      "verification": "≥1 account removed from Special Attention category",
+      "workflow": "social_graph",
+      "content_theme": "general"
+    },
+    {
+      "prompt": "Want to engage more with the photography community. Browse for some artistic or photography posts and leave genuine compliments on a couple that show real skill or creativity.",
+      "verification": "≥2 photography/art posts have comments from user",
+      "workflow": "content_engagement",
+      "content_theme": "photography"
+    },
+    {
+      "prompt": "Thinking about posting something about the changing seasons. Write a post about autumn or winter observations with some nature hashtags and keep it poetic but short.",
+      "verification": "New post exists about seasons/nature with ≥1 nature-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "lifestyle"
+    },
+    {
+      "prompt": "Need better organization for my gaming interests. Create a group for gaming content and add some gamers or esports accounts I follow so I can check gaming news separately.",
+      "verification": "Custom group with gaming-related name exists; ≥2 gaming/esports accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "gaming"
+    },
+    {
+      "prompt": "Saw some heated discussions earlier and want to see what's controversial today. Check the trending topics for anything with high engagement and read through some of the debate.",
+      "verification": "Current screen shows trending topic with high discussion count or controversy-related content",
+      "workflow": "feed_navigation",
+      "content_theme": "general"
+    },
+    {
+      "prompt": "Been learning about sustainable living. Post something about environmental consciousness or green living tips, include relevant hashtags and maybe tag it with the current environmental discussions.",
+      "verification": "New post exists about environment/sustainability with ≥1 environmental hashtag",
+      "workflow": "content_creation",
+      "content_theme": "environment"
+    },
+    {
+      "prompt": "Want to clean up who I'm following for better content quality. Go through some profiles and unfollow accounts that haven't posted anything interesting lately or mostly share spam-like content.",
+      "verification": "≥2 accounts unfollowed from following list",
+      "workflow": "social_graph",
+      "content_theme": "general"
+    },
+    {
+      "prompt": "The sports scene has been exciting lately. Find some sports-related trending content and engage with posts about recent games or player news that I actually care about.",
+      "verification": "≥1 sports post liked or commented within trending sports content",
+      "workflow": "content_engagement",
+      "content_theme": "sports"
+    },
+    {
+      "prompt": "Want to share my thoughts on work-life balance. Create a post about professional life or career insights with some business hashtags, keep it relatable and professional.",
+      "verification": "New post exists about work/career topics with ≥1 business-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "business"
+    },
+    {
+      "prompt": "My art and design interests are scattered across my feed. Set up a group for creative content and organize some artists and designers I follow into it for easier browsing.",
+      "verification": "Custom group with art/design-related name exists; ≥2 art/design accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "art"
+    },
+    {
+      "prompt": "Curious about fashion trends that are popular right now. Browse the trending topics for style or fashion content and like some posts that showcase looks I actually find appealing.",
+      "verification": "≥2 fashion/style posts liked within trending fashion content",
+      "workflow": "content_engagement",
+      "content_theme": "fashion"
+    },
+    {
+      "prompt": "Been having some philosophical thoughts lately. Post something reflective about life or personal growth, use some thoughtful hashtags, and keep the tone genuine.",
+      "verification": "New post exists with philosophical/life reflection content and ≥1 relevant hashtag",
+      "workflow": "content_creation",
+      "content_theme": "lifestyle"
+    },
+    {
+      "prompt": "Want to find people who post about healthy living. Search for wellness or health content and follow a few accounts that share practical tips, not just gym selfies or product promotion.",
+      "verification": "≥2 health/wellness accounts followed from search results",
+      "workflow": "social_graph",
+      "content_theme": "health"
+    },
+    {
+      "prompt": "There's always interesting tech news but it gets buried. Check what's trending in technology and join the discussion by commenting on posts about innovations I find promising.",
+      "verification": "≥1 comment exists on tech-related posts within trending technology content",
+      "workflow": "content_engagement",
+      "content_theme": "tech"
+    },
+    {
+      "prompt": "Feeling nostalgic about childhood memories. Write a post sharing a favorite childhood memory or tradition, add some nostalgic hashtags, and keep it warm and personal.",
+      "verification": "New post exists about childhood/nostalgia with ≥1 memory-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "lifestyle"
+    },
+    {
+      "prompt": "My comedy and humor consumption needs better curation. Find some funny content creators and add them to a custom group so I can browse humor when I need a laugh.",
+      "verification": "Custom group with humor-related name exists; ≥2 comedy/humor accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "humor"
+    },
+    {
+      "prompt": "Want to see what's happening in the local community. Browse for content about my city or region and engage with posts about local events or news that seem interesting.",
+      "verification": "≥1 local/regional post liked or commented",
+      "workflow": "content_engagement",
+      "content_theme": "local"
+    },
+    {
+      "prompt": "Been experimenting with new recipes and want to share. Post about a dish I made recently with cooking hashtags and maybe describe the process or ingredients briefly.",
+      "verification": "New post exists about cooking/recipe with ≥1 food-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "food"
+    },
+    {
+      "prompt": "Need to stay updated on industry news for work. Find and follow some professional accounts in my field, then add them to Special Attention so I don't miss important updates.",
+      "verification": "≥1 professional/industry account followed and added to Special Attention",
+      "workflow": "social_graph",
+      "content_theme": "business"
+    },
+    {
+      "prompt": "The pet content on Weibo is always heartwarming. Browse for some cute pet posts and spread some love by liking and commenting on ones that genuinely make me smile.",
+      "verification": "≥2 pet-related posts liked and commented",
+      "workflow": "content_engagement",
+      "content_theme": "pets"
+    },
+    {
+      "prompt": "Want to document my learning journey. Create a post about something new I learned recently, include educational hashtags, and encourage others to share their learning experiences too.",
+      "verification": "New post exists about learning/education with ≥1 learning-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "education"
+    },
+    {
+      "prompt": "My science and technology interests are mixed with everything else. Create a dedicated group for science content and organize the science communicators I follow for focused reading.",
+      "verification": "Custom group with science-related name exists; ≥2 science accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "science"
+    },
+    {
+      "prompt": "Interested in what cultural events are trending. Check for topics about festivals, exhibitions, or cultural happenings and engage with posts about events I'd actually attend.",
+      "verification": "≥1 cultural/event post liked or commented within trending cultural content",
+      "workflow": "content_engagement",
+      "content_theme": "culture"
+    },
+    {
+      "prompt": "Had an inspiring moment today and want to share positivity. Write an uplifting post about gratitude or motivation with some inspirational hashtags to brighten someone's day.",
+      "verification": "New post exists with positive/motivational content and ≥1 inspirational hashtag",
+      "workflow": "content_creation",
+      "content_theme": "motivation"
+    },
+    {
+      "prompt": "My history and documentary interests deserve their own space. Set up a group for educational content and add historians or documentary creators I follow for intellectual browsing.",
+      "verification": "Custom group with educational/history-related name exists; ≥2 history/documentary accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "history"
+    },
+    {
+      "prompt": "Want to see what's buzzing in the entertainment industry. Browse trending topics for celebrity news or movie updates and like posts about projects I'm excited about.",
+      "verification": "≥2 entertainment posts liked within trending entertainment content",
+      "workflow": "content_engagement",
+      "content_theme": "entertainment"
+    },
+    {
+      "prompt": "Been thinking about minimalism and simple living. Post about decluttering or mindful consumption habits with relevant lifestyle hashtags to inspire others.",
+      "verification": "New post exists about minimalism/simple living with ≥1 lifestyle hashtag",
+      "workflow": "content_creation",
+      "content_theme": "lifestyle"
+    },
+    {
+      "prompt": "Need better automotive content curation. Search for car enthusiasts and reviewers, then create a group for automotive content to separate car posts from general feed.",
+      "verification": "Custom group with automotive-related name exists; ≥1 automotive account followed and assigned",
+      "workflow": "social_graph",
+      "content_theme": "automotive"
+    },
+    {
+      "prompt": "The language learning community seems active lately. Find posts about studying languages or cultural exchange and engage with ones offering helpful tips or experiences.",
+      "verification": "≥2 language learning posts liked or commented",
+      "workflow": "content_engagement",
+      "content_theme": "education"
+    },
+    {
+      "prompt": "Want to share my thoughts on current movie trends. Create a post reviewing recent films or discussing what makes good cinema, include movie hashtags and film opinions.",
+      "verification": "New post exists about movies/cinema with ≥1 film-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "entertainment"
+    },
+    {
+      "prompt": "My investment and finance interests need organization. Find some financial educators or market analysts and group them separately so I can check market updates efficiently.",
+      "verification": "Custom group with finance-related name exists; ≥2 finance/investment accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "finance"
+    },
+    {
+      "prompt": "Curious about what's trending in beauty and skincare. Browse those topics and engage with posts sharing genuine product reviews or skincare tips, not just advertisements.",
+      "verification": "≥1 beauty/skincare post liked or commented within trending beauty content",
+      "workflow": "content_engagement",
+      "content_theme": "beauty"
+    },
+    {
+      "prompt": "Had some productivity insights lately. Post about time management or work efficiency tips with productivity hashtags to help others optimize their routines.",
+      "verification": "New post exists about productivity/efficiency with ≥1 productivity hashtag",
+      "workflow": "content_creation",
+      "content_theme": "productivity"
+    },
+    {
+      "prompt": "Want to discover new perspectives on current events. Browse through different viewpoints in trending news topics and like posts that offer balanced analysis or thoughtful commentary.",
+      "verification": "≥2 news analysis posts liked within trending news content",
+      "workflow": "content_engagement",
+      "content_theme": "news"
+    },
+    {
+      "prompt": "Been exploring meditation and mindfulness practices. Share a post about mental wellness or mindfulness techniques with wellness hashtags to encourage others in their journey.",
+      "verification": "New post exists about mental wellness/mindfulness with ≥1 wellness hashtag",
+      "workflow": "content_creation",
+      "content_theme": "wellness"
+    },
+    {
+      "prompt": "My outdoor and adventure interests are scattered. Create a group for outdoor enthusiasts and organize hiking, camping, or adventure accounts for nature-focused content browsing.",
+      "verification": "Custom group with outdoor/adventure-related name exists; ≥2 outdoor/adventure accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "outdoor"
+    },
+    {
+      "prompt": "Want to engage with the startup and entrepreneur community. Find posts about business innovation or startup stories and comment with encouragement or insights on promising ventures.",
+      "verification": "≥1 startup/entrepreneur post commented within business content",
+      "workflow": "content_engagement",
+      "content_theme": "business"
+    },
+    {
+      "prompt": "Feeling creative today and want to share artistic inspiration. Post about creativity, artistic processes, or design thinking with art hashtags to inspire fellow creators.",
+      "verification": "New post exists about creativity/art with ≥1 art-related hashtag",
+      "workflow": "content_creation",
+      "content_theme": "art"
+    },
+    {
+      "prompt": "My parenting and family content needs better organization. Find family-focused accounts and create a dedicated group so I can browse parenting tips and family activities separately.",
+      "verification": "Custom group with family/parenting-related name exists; ≥2 family/parenting accounts assigned",
+      "workflow": "social_graph",
+      "content_theme": "family"
+    }
+  ]
+}

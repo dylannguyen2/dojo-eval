@@ -35,11 +35,10 @@ cd figma/app && pnpm dev
 ### 2. Start Verification Server
 
 ```bash
-cd dojo-figma-eval
 uv run python server.py
 ```
 
-Server runs at `http://localhost:8002`
+Server runs at `http://localhost:8003`
 
 ### 3. Run Verification
 
@@ -48,7 +47,7 @@ Server runs at `http://localhost:8002`
 ./verify-task.sh create-sticky-note-v2
 
 # Or via curl
-curl -X POST http://localhost:8002/verify \
+curl -X POST http://localhost:8003/verify \
   -H "Content-Type: application/json" \
   -d '{"task_id": "create-sticky-note-v2"}'
 ```

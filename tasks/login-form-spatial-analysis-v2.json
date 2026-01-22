@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "login-form-spatial-analysis-v2",
+  "name": "Login Form Deep Spatial Analysis",
+  "description": "Perform deep spatial analysis of login form elements",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform deep spatial analysis of the login form elements within the 'Login Screen' frame. Extract exact positions and calculate spacing between key elements: verify 'Welcome Back' text is at (24,280), 'Email Input' rectangle is at (24,380), 'Password Input' is at (24,444), and 'Sign In Button' is at (24,520). Calculate the vertical spacing between each consecutive input element.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"welcome_text_position\\\": {\\\"x\\\": <number>, \\\"y\\\": <number>},\\n  \\\"email_input_position\\\": {\\\"x\\\": <number>, \\\"y\\\": <number>},\\n  \\\"password_input_position\\\": {\\\"x\\\": <number>, \\\"y\\\": <number>},\\n  \\\"sign_in_button_position\\\": {\\\"x\\\": <number>, \\\"y\\\": <number>},\\n  \\\"spacing_email_to_password\\\": <number>,\\n  \\\"spacing_password_to_button\\\": <number>\\n}\", \"success_criteria\": \"'Welcome Back' text positioned at (24,280). 'Email Input' rectangle positioned at (24,380). 'Password Input' rectangle positioned at (24,444). 'Sign In Button' rectangle positioned at (24,520). Vertical spacing between email and password inputs is 64px. Vertical spacing between password input and button is 76px.\"}",
+  "reward_function": "_validate_figma_login_form_spatial_analysis",
+  "valid_target_states": "",
+  "max_steps": 15,
+  "timeout_seconds": 120,
+  "metadata": "{\"category\": \"Spatial Analysis\", \"difficulty\": \"intermediate\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "login-form-spatial-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-1\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-1\"}",
+  "image": "",
+  "env_version": "1.0"
+}

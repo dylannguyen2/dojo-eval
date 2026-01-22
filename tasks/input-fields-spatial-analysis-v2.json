@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "input-fields-spatial-analysis-v2",
+  "name": "Spatial Analysis of Input Fields",
+  "description": "Perform precise spatial analysis of input fields in the Login Screen frame",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform precise spatial analysis of input fields in the Login Screen frame (node-frame-login). Calculate the exact vertical spacing between the 'Email Input' rectangle (at 24,380 with height 48) and 'Password Input' rectangle (at 24,444 with height 48). Both inputs have identical dimensions of 327x48 pixels. Verify their alignment and calculate the gap between them.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"email_input\\\": {\\\"name\\\": \\\"Email Input\\\", \\\"x\\\": 24, \\\"y\\\": 380, \\\"width\\\": 327, \\\"height\\\": 48},\\n  \\\"password_input\\\": {\\\"name\\\": \\\"Password Input\\\", \\\"x\\\": 24, \\\"y\\\": 444, \\\"width\\\": 327, \\\"height\\\": 48},\\n  \\\"vertical_spacing\\\": <number>,\\n  \\\"horizontally_aligned\\\": <boolean>,\\n  \\\"same_dimensions\\\": <boolean>\\n}\", \"success_criteria\": \"Email Input position is exactly x=24, y=380. Password Input position is exactly x=24, y=444. Both inputs have identical width=327 and height=48. Vertical spacing between inputs is exactly 16 pixels (444 - 380 - 48 = 16). Both inputs are horizontally aligned (same x coordinate). Both inputs have identical dimensions.\"}",
+  "reward_function": "_validate_figma_input_fields_spatial_analysis",
+  "valid_target_states": "",
+  "max_steps": 15,
+  "timeout_seconds": 120,
+  "metadata": "{\"category\": \"Spatial Analysis\", \"difficulty\": \"intermediate\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "input-fields-spatial-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-1\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-1\"}",
+  "image": "",
+  "env_version": "1.0"
+}

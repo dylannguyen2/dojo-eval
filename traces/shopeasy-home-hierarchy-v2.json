@@ -1,0 +1,11 @@
+{
+  "task_id": "shopeasy-home-hierarchy-v2",
+  "steps": [
+    {
+      "action": "Get metadata for ShopEasy Home Screen to analyze hierarchy structure",
+      "command": "mcp_figma-mcp_get_metadata(nodeId: \"node-shopeasy-home-frame\", fileKey: \"file-shopeasy\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"root_frame\": {\"name\": \"ShopEasy Home Screen\", \"x\": 0, \"y\": 0, \"width\": 393, \"height\": 852}, \"header_actions\": {\"name\": \"Header Actions\", \"child_count\": 2, \"children\": [{\"name\": \"Search Icon\", \"type\": \"ellipse\"}, {\"name\": \"Cart Icon\", \"type\": \"ellipse\"}]}, \"total_nodes_analyzed\": 50}"
+}

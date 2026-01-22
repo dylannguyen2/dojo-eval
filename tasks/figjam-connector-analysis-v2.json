@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "figjam-connector-analysis-v2",
+  "name": "FigJam Connector Relationships Analysis",
+  "description": "Analyze comprehensive FigJam connector relationships and spatial layout",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Analyze the comprehensive FigJam connector relationships and spatial layout in the Q1 Roadmap Planning board (file-3, page-4). Map the connections: 'Connection 1-2' connects 'Feature Idea' sticky (right magnet) to 'Priority' sticky (left magnet), 'Connection 2-3' connects 'Priority' sticky (right magnet) to 'Tech Debt' sticky (left magnet). Calculate connector paths: Connection 1-2 should span from x=300 (Feature Idea right edge) to x=350 (Priority left edge), Connection 2-3 should span from x=550 (Priority right edge) to x=600 (Tech Debt left edge). Verify the section 'Q1 Goals' at (50,50) with size 800x400 encompasses all sticky notes. Analyze stamp placement at (250,280) relative to sticky positions.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"connectors\\\": [\\n    {\\n      \\\"name\\\": \\\"Connection 1-2\\\",\\n      \\\"start_node\\\": \\\"Feature Idea\\\",\\n      \\\"end_node\\\": \\\"Priority\\\",\\n      \\\"start_magnet\\\": \\\"right\\\",\\n      \\\"end_magnet\\\": \\\"left\\\",\\n      \\\"calculated_span\\\": {\\\"from_x\\\": 300, \\\"to_x\\\": 350}\\n    },\\n    {\\n      \\\"name\\\": \\\"Connection 2-3\\\",\\n      \\\"start_node\\\": \\\"Priority\\\",\\n      \\\"end_node\\\": \\\"Tech Debt\\\",\\n      \\\"start_magnet\\\": \\\"right\\\",\\n      \\\"end_magnet\\\": \\\"left\\\",\\n      \\\"calculated_span\\\": {\\\"from_x\\\": 550, \\\"to_x\\\": 600}\\n    }\\n  ],\\n  \\\"section_coverage\\\": {\\n    \\\"section_bounds\\\": {\\\"x\\\": 50, \\\"y\\\": 50, \\\"width\\\": 800, \\\"height\\\": 400},\\n    \\\"sticky_bounds\\\": {\\\"leftmost\\\": 100, \\\"rightmost\\\": 800, \\\"topmost\\\": 100, \\\"bottommost\\\": 300},\\n    \\\"encompasses_all_stickies\\\": true\\n  },\\n  \\\"stamp_analysis\\\": {\\\"stamp_x\\\": 250, \\\"stamp_y\\\": 280, \\\"relative_to_stickies\\\": \\\"between Feature Idea and Priority\\\"}\\n}\", \"success_criteria\": \"'Connection 1-2' connector exists with startEndpoint.nodeId='node-sticky-1' and endEndpoint.nodeId='node-sticky-2'. 'Connection 2-3' connector exists with startEndpoint.nodeId='node-sticky-2' and endEndpoint.nodeId='node-sticky-3'. Connection 1-2 uses right and left magnets. Connection 2-3 uses right and left magnets. 'Q1 Goals' section exists at (50,50) with dimensions 800x400. 'Approved' stamp exists at (250,280). Section encompasses sticky note positions (100-800 x, 100-300 y within 50-850 x, 50-450 y).\"}",
+  "reward_function": "_validate_figma_figjam_connector_analysis",
+  "valid_target_states": "",
+  "max_steps": 25,
+  "timeout_seconds": 240,
+  "metadata": "{\"category\": \"FigJam Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"figjam_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "figjam-connector-analysis-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-3\",\"currentPageId\":\"page-4\",\"selectedNodeIds\":[],\"figjam\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figjam/file-3/page-4\"}",
+  "image": "",
+  "env_version": "1.0"
+}

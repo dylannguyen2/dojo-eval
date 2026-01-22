@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "button-component-variants-v2",
+  "name": "Button Component Variants Analysis",
+  "description": "Perform complex component analysis on Button components with variant properties",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Perform complex component analysis on the Button components in the 'Component Library' file (file-2) on the 'Buttons' page (page-3). Analyze the component variants: verify 'Button/Primary' component exists at (100,100) with dimensions 120x40, and 'Button/Secondary' component exists at (100,160) with dimensions 120x40. Both components should have type 'component', be part of componentSetId 'compset-button', and have cornerRadius 8. Extract the variant properties: Primary should have variantProperties {\\\"State\\\": \\\"Default\\\", \\\"Variant\\\": \\\"Primary\\\"}, Secondary should have variantProperties {\\\"State\\\": \\\"Default\\\", \\\"Variant\\\": \\\"Secondary\\\"}. Analyze the exact positioning and spacing between variants (should be 20px gap between them: 160-100-40=20).\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"page_name\\\": \\\"Buttons\\\",\\n  \\\"components\\\": [\\n    {\\n      \\\"name\\\": \\\"Button/Primary\\\",\\n      \\\"type\\\": \\\"component\\\",\\n      \\\"x\\\": 100,\\n      \\\"y\\\": 100,\\n      \\\"width\\\": 120,\\n      \\\"height\\\": 40,\\n      \\\"componentSetId\\\": \\\"compset-button\\\",\\n      \\\"variantProperties\\\": {\\\"State\\\": \\\"Default\\\", \\\"Variant\\\": \\\"Primary\\\"}\\n    },\\n    {\\n      \\\"name\\\": \\\"Button/Secondary\\\",\\n      \\\"type\\\": \\\"component\\\",\\n      \\\"x\\\": 100,\\n      \\\"y\\\": 160,\\n      \\\"width\\\": 120,\\n      \\\"height\\\": 40,\\n      \\\"componentSetId\\\": \\\"compset-button\\\",\\n      \\\"variantProperties\\\": {\\\"State\\\": \\\"Default\\\", \\\"Variant\\\": \\\"Secondary\\\"}\\n    }\\n  ],\\n  \\\"vertical_spacing\\\": 20\\n}\", \"success_criteria\": \"'Button/Primary' component exists at (100,100) with dimensions 120x40. 'Button/Secondary' component exists at (100,160) with dimensions 120x40. Both components have type 'component'. Both components belong to componentSetId 'compset-button'. Primary component has variantProperties State='Default', Variant='Primary'. Secondary component has variantProperties State='Default', Variant='Secondary'. Vertical spacing between components is 20px (160-100-40=20).\"}",
+  "reward_function": "_validate_figma_button_component_variants",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Component Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"design_inspection\"}",
+  "environment_type": "mcp",
+  "trace_id": "button-component-variants-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-2\",\"currentPageId\":\"page-3\",\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-2/page-3\"}",
+  "image": "",
+  "env_version": "1.0"
+}

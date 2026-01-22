@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "login-screen-text-react-v2",
+  "name": "Extract Login Screen Text as React",
+  "description": "Extract the text-heavy Login Screen as React component focusing on text elements",
+  "tier": "intermediate",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Extract the text-heavy Login Screen as React component code focusing on the text elements: 'Welcome Back' (28px Inter Bold), 'Sign in subtitle' (16px Inter Regular), and 'Sign In Text' (16px Inter Medium). The React code should preserve text hierarchy and typography with embedded SVG showing the visual text rendering.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"framework\\\": \\\"react\\\",\\n  \\\"code\\\": \\\"<the generated React component>\\\",\\n  \\\"has_svg\\\": true,\\n  \\\"jsx_syntax\\\": true\\n}\", \"success_criteria\": \"Code uses React/JSX syntax. Contains embedded SVG element. Component structure is valid React. JSX syntax is correct.\"}",
+  "reward_function": "_validate_figma_login_screen_text_react",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Code Extraction\", \"difficulty\": \"intermediate\", \"workflow\": \"design_to_code\"}",
+  "environment_type": "mcp",
+  "trace_id": "login-screen-text-react-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-1\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-1\"}",
+  "image": "",
+  "env_version": "1.0"
+}

@@ -1,0 +1,21 @@
+{
+  "spa": "figma",
+  "version": "2.0",
+  "id": "variable-definitions-crossref-v2",
+  "name": "Variable Definitions Cross-Reference",
+  "description": "Extract and cross-reference variable definitions between nodes",
+  "tier": "advanced",
+  "initial_backend_state_name": "default_backend",
+  "instructions": "{\"user_prompt\": \"Extract variable definitions for the 'Sign In Button' node (node-rect-button) which also uses boundVariables.fill='var-primary'. Cross-reference with the Brand Colors collection to verify this button uses the same primary color token as the Header Background. Confirm both nodes share identical variable bindings and color values across light/dark modes.\\n\\nProvide your final answer as JSON:\\n{\\n  \\\"button_node_name\\\": \\\"Sign In Button\\\",\\n  \\\"header_node_name\\\": \\\"Header Background\\\",\\n  \\\"shared_variable\\\": \\\"var-primary\\\",\\n  \\\"collection_name\\\": \\\"Brand Colors\\\",\\n  \\\"color_consistency\\\": {\\n    \\\"light_mode\\\": \\\"<color value>\\\",\\n    \\\"dark_mode\\\": \\\"<color value>\\\"\\n  },\\n  \\\"same_variable_binding\\\": <boolean>\\n}\", \"success_criteria\": \"Both nodes use the same variable 'var-primary' for fill binding. Variable belongs to 'Brand Colors' collection. Light mode color is '#3B82F6' for both nodes. Dark mode color is '#60A5FA' for both nodes. Variable binding is identical between Header Background and Sign In Button.\"}",
+  "reward_function": "_validate_figma_variable_definitions_crossref",
+  "valid_target_states": "",
+  "max_steps": 20,
+  "timeout_seconds": 180,
+  "metadata": "{\"category\": \"Variable Analysis\", \"difficulty\": \"advanced\", \"workflow\": \"design_tokens\"}",
+  "environment_type": "mcp",
+  "trace_id": "variable-definitions-crossref-v2",
+  "initial_state": "{\"currentUser\":{\"_id\":\"user-1\",\"name\":\"Alice Designer\",\"email\":\"alice@company.com\"},\"currentFileId\":\"file-1\",\"currentPageId\":null,\"selectedNodeIds\":[],\"figma\":{\"selectedTool\":\"select\",\"canvas\":{\"zoom\":1,\"panX\":0,\"panY\":0}}}",
+  "environment": "{\"type\": \"url\", \"path\": \"http://localhost:5173/figma/file-1\"}",
+  "image": "",
+  "env_version": "1.0"
+}

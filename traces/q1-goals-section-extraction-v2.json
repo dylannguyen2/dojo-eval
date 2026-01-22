@@ -1,0 +1,16 @@
+{
+  "task_id": "q1-goals-section-extraction-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Q1 Goals section to verify position and dimensions",
+      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"node-section-q1\", fileKey: \"file-3\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    },
+    {
+      "action": "Extract Q1 Goals section as React component with embedded SVG",
+      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-section-q1\", fileKey: \"file-3\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"framework\": \"react\", \"section_name\": \"Q1 Goals\", \"position\": {\"x\": 50, \"y\": 50}, \"dimensions\": {\"width\": 800, \"height\": 400}, \"code\": \"export default function Component({ className, ...props }) {\\n  return (\\n    <div className={className} {...props} dangerouslySetInnerHTML={{ __html: `<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"800\\\" height=\\\"400\\\" viewBox=\\\"0 0 800 400\\\"><rect x=\\\"0\\\" y=\\\"0\\\" width=\\\"800\\\" height=\\\"400\\\" fill=\\\"rgba(254, 243, 199, 0.3)\\\" stroke=\\\"#D1D5DB\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"10,5\\\" opacity=\\\"1\\\" /></svg>` }} />\\n  );\\n}\", \"has_svg\": true, \"opacity_level\": \"0.3\"}"
+}

@@ -305,7 +305,7 @@ def list_functions():
 
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8002))
+    port = int(os.environ.get("PORT", 8003))
     print(f"Starting Figma verification server on port {port}")
     print(f"Storage URL: {DEFAULT_STORAGE_URL}")
     print(f"Tasks directory: {TASKS_DIR}")

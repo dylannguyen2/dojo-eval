@@ -1,0 +1,16 @@
+{
+  "task_id": "login-screen-text-react-v2",
+  "steps": [
+    {
+      "action": "Get metadata for Login Screen to identify text elements",
+      "command": "mcp_official-figma-mcp_get_metadata(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"unknown\", clientFrameworks: \"unknown\")",
+      "method": "mcp"
+    },
+    {
+      "action": "Extract Login Screen as React component with embedded SVG",
+      "command": "mcp_official-figma-mcp_get_design_context(nodeId: \"node-frame-login\", fileKey: \"file-1\", clientLanguages: \"typescript\", clientFrameworks: \"react\")",
+      "method": "mcp"
+    }
+  ],
+  "final_answer": "{\"framework\": \"react\", \"code\": \"export default function Component({ className, ...props }) {\\n  return (\\n    <div className={className} {...props} dangerouslySetInnerHTML={{ __html: `<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"375\\\" height=\\\"812\\\" viewBox=\\\"0 0 375 812\\\"><rect x=\\\"0\\\" y=\\\"0\\\" width=\\\"375\\\" height=\\\"812\\\" rx=\\\"0\\\" fill=\\\"rgba(255, 255, 255, 1)\\\"  opacity=\\\"1\\\" /><rect x=\\\"-100\\\" y=\\\"-100\\\" width=\\\"375\\\" height=\\\"200\\\" rx=\\\"0\\\" fill=\\\"rgba(59, 130, 246, 1)\\\"  opacity=\\\"1\\\" /><rect x=\\\"-76\\\" y=\\\"280\\\" width=\\\"327\\\" height=\\\"48\\\" rx=\\\"8\\\" fill=\\\"rgba(243, 244, 246, 1)\\\" stroke=\\\"rgba(209, 213, 219, 1)\\\" stroke-width=\\\"1\\\" opacity=\\\"1\\\" /><rect x=\\\"-76\\\" y=\\\"344\\\" width=\\\"327\\\" height=\\\"48\\\" rx=\\\"8\\\" fill=\\\"rgba(243, 244, 246, 1)\\\" stroke=\\\"rgba(209, 213, 219, 1)\\\" stroke-width=\\\"1\\\" opacity=\\\"1\\\" /><rect x=\\\"-76\\\" y=\\\"420\\\" width=\\\"327\\\" height=\\\"48\\\" rx=\\\"8\\\" fill=\\\"rgba(59, 130, 246, 1)\\\"  opacity=\\\"1\\\" /><ellipse cx=\\\"87\\\" cy=\\\"60\\\" rx=\\\"40\\\" ry=\\\"40\\\" fill=\\\"rgba(255, 255, 255, 1)\\\" stroke=\\\"rgba(255, 255, 255, 1)\\\" stroke-width=\\\"3\\\" opacity=\\\"1\\\" /></svg>` }} />\\n  );\\n}\", \"has_svg\": true, \"jsx_syntax\": true}"
+}
